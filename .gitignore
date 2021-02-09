@@ -12,6 +12,9 @@
 sysinfo.txt
 # Unity3D generated meta files
 *.pidb.meta
+# Unity3D generated test scene
+InitTestScene*.unity
+InitTestScene*.unity.meta
 
 ###
 # VS/MD solution and project files

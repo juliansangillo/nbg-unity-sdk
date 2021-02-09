@@ -51,7 +51,7 @@ namespace NaughtyBiker.InfoObjects {
 
             IDictionary<string, object> data = new Dictionary<string, object>();
 
-            return new Info(data);
+            return new Info("CHANGE_ME", data);
         }
 
     }

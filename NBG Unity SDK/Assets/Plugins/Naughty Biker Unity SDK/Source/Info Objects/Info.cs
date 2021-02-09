@@ -19,14 +19,45 @@ namespace NaughtyBiker.InfoObjects {
         private string id;
 
         /**
-        * Main Constructor
+        * Default Constructor
         *
+        * @param id A string that can be used as a unique identifier for this collection of info
+        */
+        public Info(string infoId) {
+            this.Id = infoId;
+            this.data = new Dictionary<string, object>();
+            this.StateChanged = (id, key, value) => {};
+        }
+
+        /**
+        * @param id A string that can be used as a unique identifier for this collection of info
         * @param data A hash table for storing the info added by other objects
         */
-        public Info(IDictionary<string, object> data) {
-
+        public Info(string infoId, IDictionary<string, object> data) {
+            this.Id = infoId;
             this.data = data;
+            this.StateChanged = (id, key, value) => {};
+        }
 
+        /**
+        * @param id A string that can be used as a unique identifier for this collection of info
+        * @param stateChanged The callback function to be called when a value stored in this info object has been changed
+        */
+        public Info(string infoId, StateChange stateChanged) {
+            this.Id = infoId;
+            this.data = new Dictionary<string, object>();
+            this.StateChanged = stateChanged;
+        }
+
+        /**
+        * @param id A string that can be used as a unique identifier for this collection of info
+        * @param data A hash table for storing the info added by other objects
+        * @param stateChanged The callback function to be called when a value stored in this info object has been changed
+        */
+        public Info(string infoId, IDictionary<string, object> data, StateChange stateChanged) {
+            this.Id = infoId;
+            this.data = data;
+            this.StateChanged = stateChanged;
         }
 
         /**
