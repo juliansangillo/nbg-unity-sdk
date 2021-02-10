@@ -14,8 +14,6 @@ namespace NaughtyBiker.Editor.UnityTests.Destroy {
 
 		[UnityTest]
 		public IEnumerator DontDestroy_PreserveDuplicatesIsFalseAndOnly1GameObjectWithTagExists_MakeObjectDontDestroyOnLoad() {
-            Debug.Log("DontDestroy_PreserveDuplicatesIsFalseAndOnly1GameObjectWithTagExists_MakeObjectDontDestroyOnLoad");
-            Debug.Log(SceneManager.GetActiveScene().name);
 			GameObject obj = new GameObject("foo");
 			obj.tag = tag;
 			DontDestroyOnLoad dontDestroyOnLoad = obj.AddComponent<DontDestroyOnLoad>();
@@ -30,8 +28,6 @@ namespace NaughtyBiker.Editor.UnityTests.Destroy {
 
 		[UnityTest]
 		public IEnumerator DontDestroy_PreserveDuplicatesIsFalseAnd2GameObjectsWithTagExist_MakeOneObjectDontDestroyOnLoadAndDestroyOtherObject() {
-            Debug.Log("DontDestroy_PreserveDuplicatesIsFalseAnd2GameObjectsWithTagExist_MakeOneObjectDontDestroyOnLoadAndDestroyOtherObject");
-            Debug.Log(SceneManager.GetActiveScene().name);
 			GameObject obj1 = new GameObject("foo");
 			obj1.tag = tag;
             DontDestroyOnLoad dontDestroyOnLoad1 = obj1.AddComponent<DontDestroyOnLoad>();

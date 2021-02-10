@@ -10,7 +10,7 @@ namespace NaughtyBiker.InfoObjects {
     * Info Objects with this attached are NOT marked with DontDestroyOnLoad by default. If this object is to persist between scenes, it
     * must have DontDestroyOnLoad attached as well.<br>
     *
-    * Component Menu: "Naughty Biker Unity SDK / Info Objects / Info Object"
+    * Component Menu: "Naughty Biker Games / Info Objects / Info Object"
     *
     * @author Julian Sangillo
     * @version 1.0
@@ -18,18 +18,32 @@ namespace NaughtyBiker.InfoObjects {
     * @see InfoObjectControl
     * @see NaughtyBiker.Signals.StateChangeSignal
     */
-    [AddComponentMenu("Naughty Biker Unity SDK/Info Objects/Info Object")]
+    [AddComponentMenu("Naughty Biker Games/Info Objects/Info Object")]
     public class InfoObject : MonoBehaviour {
         
         private IInfo info;
         private SignalBus signalBus;
 
         /**
-        * Initializes the IInfo object's unique id as the tag of the game object this mono is attached to.
+        * Construction method. Used to initialize monobehaviours
+        * 
+        * @param info The IInfo data object that backs this Info Object
+        * @param signalBus The Zenject signal bus. Used to fire Zenject signals
         */
-        public void InitInfoID() {
+        [Inject]
+        public void Construct(IInfo info, SignalBus signalBus) {
+
+            this.info = info;
+            this.signalBus = signalBus;
 
             this.info.Id = gameObject.tag;
+            this.info.StateChanged = (id, key, value) => OnStateChange(id, key, value);
+
+        }
+
+        private void OnStateChange(string id, string key, object value) {
+
+            signalBus.Fire(new StateChangeSignal(id, key, value));
 
         }
 
@@ -54,26 +68,6 @@ namespace NaughtyBiker.InfoObjects {
 
             foreach(string key in keys)
                 signalBus.Fire(new StateChangeSignal(this.info.Id, key, this.info[key]));
-
-        }
-
-        [Inject]
-        private void Construct(IInfo info, SignalBus signalBus) {
-
-            this.info = info;
-            this.signalBus = signalBus;
-
-        }
-
-        private void Awake() {
-            
-            this.info.StateChanged = new StateChange(OnStateChange);
-
-        }
-
-        private void OnStateChange(string id, string key, object value) {
-
-            signalBus.Fire(new StateChangeSignal(id, key, value));
 
         }
 

@@ -8,7 +8,7 @@ namespace NaughtyBiker.InfoObjects {
     * A Zenject monoinstaller that installs bindings for the InfoObject API dependencies. To use, it is recommended to attach 
     * this installer to the scene context.
     *
-    * Component Menu: "Naughty Biker Unity SDK / Zenject Installers / Info Object Installer"
+    * Component Menu: "Naughty Biker Games / Zenject Installers / Info Object Installer"
     * 
     * @author Julian Sangillo
     * @version 1.0
@@ -18,8 +18,8 @@ namespace NaughtyBiker.InfoObjects {
     * @see InfoObject
     * @see InfoObjectControl
     */
-    [AddComponentMenu("Naughty Biker Unity SDK/Zenject Installers/Info Object Installer")]
-    public class InfoObjectInstaller : MonoInstaller {
+    [AddComponentMenu("Naughty Biker Games/Zenject Installers/Info Object Installer")]
+    public class InfoObjectInstaller : Installer<InfoObjectInstaller> { //TODO: Need to update this to use a base installer and a monoinstaller
         
         /**
         * A callback from Zenject that binds InfoObject dependencies to the DI Container for future dependency injection. This is 
@@ -32,26 +32,25 @@ namespace NaughtyBiker.InfoObjects {
 
         }
 
+        private CreateInfoObject CreateCallbackForInfoObject() {
+
+            return (prefab, tag) => OnCreateInfoObject(prefab, tag);
+        }
+
         private InfoObject OnCreateInfoObject(GameObject infoObjectPrefab, string objectTag) {
 
             GameObject obj = Container.InstantiatePrefab(infoObjectPrefab);
             
             obj.tag = objectTag;
-            obj.GetComponent<InfoObject>().InitInfoID();
             
             return obj.GetComponent<InfoObject>();
-        }
-
-        private CreateInfoObject CreateCallbackForInfoObject() {
-
-            return new CreateInfoObject(OnCreateInfoObject);
         }
 
         private Info CreateInfo() {
 
             IDictionary<string, object> data = new Dictionary<string, object>();
 
-            return new Info("CHANGE_ME", data);
+            return new Info("Default", data);
         }
 
     }

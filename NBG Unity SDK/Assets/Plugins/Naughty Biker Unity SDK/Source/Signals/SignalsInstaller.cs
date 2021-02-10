@@ -17,7 +17,7 @@ namespace NaughtyBiker.Signals {
     * @see StateChangeSignal
     */
     [AddComponentMenu("Naughty Biker Unity SDK/Zenject Installers/Signals Installer")]
-    public class SignalsInstaller : MonoInstaller {
+    public class SignalsInstaller : Installer<SignalsInstaller> {
 
         /**
         * A callback from Zenject that installs the signal bus and its dependencies to the DI Container for future dependency injection.
