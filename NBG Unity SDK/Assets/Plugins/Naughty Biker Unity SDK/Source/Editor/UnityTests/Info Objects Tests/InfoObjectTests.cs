@@ -19,8 +19,8 @@ namespace NaughtyBiker.Editor.UnityTests.InfoObjects {
 
 		[SetUp]
 		public void SetUp() {
-			InfoObjectInstaller.Install(Container);
-			SignalsInstaller.Install(Container);
+			InfoObjectBaseInstaller.Install(Container);
+			SignalsBaseInstaller.Install(Container);
 
 			info = Container.Resolve<IInfo>() as Info;
 			signalBus = Container.Resolve<SignalBus>();

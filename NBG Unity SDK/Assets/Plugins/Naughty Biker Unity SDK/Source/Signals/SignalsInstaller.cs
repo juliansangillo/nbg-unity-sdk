@@ -8,7 +8,7 @@ namespace NaughtyBiker.Signals {
     * signal bus and its subscriptions are preserved between scenes. All installers whose purpose is to declare signals
     * should also be attached to the project context so that they are declared only once during gameplay.
     *
-    * Component Menu: "Naughty Biker Unity SDK / Zenject Installers / Signals Installer"
+    * Component Menu: "Naughty Biker Games / Zenject Installers / Signals Installer"
     * 
     * @author Julian Sangillo
     * @version 1.0
@@ -16,9 +16,21 @@ namespace NaughtyBiker.Signals {
     * @see InitializeSignal
     * @see StateChangeSignal
     */
-    [AddComponentMenu("Naughty Biker Unity SDK/Zenject Installers/Signals Installer")]
-    public class SignalsInstaller : Installer<SignalsInstaller> {
+    [AddComponentMenu("Naughty Biker Games/Zenject Installers/Signals Installer")]
+    public class SignalsInstaller : MonoInstaller<SignalsInstaller> {
+        /**
+        * A callback from Zenject that installs the signal bus and its dependencies to the DI Container for future dependency injection.
+        * It also declares the Utility API signals such as InitializeSignal and StateChangeSignal. This is called by Zenject during 
+        * binding and should NOT be called directly!
+        */
+		public override void InstallBindings() {
+			
+            SignalsBaseInstaller.Install(Container);
 
+		}
+    }
+
+    public class SignalsBaseInstaller : Installer<SignalsBaseInstaller> {
         /**
         * A callback from Zenject that installs the signal bus and its dependencies to the DI Container for future dependency injection.
         * It also declares the Utility API signals such as InitializeSignal and StateChangeSignal. This is called by Zenject during 
@@ -32,6 +44,5 @@ namespace NaughtyBiker.Signals {
             Container.DeclareSignal<StateChangeSignal>().OptionalSubscriber();
 
         }
-
     }
 }
