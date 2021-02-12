@@ -73,9 +73,7 @@ namespace NaughtyBiker.InfoObjects {
 
         private Info CreateInfo() {
 
-            IDictionary<string, object> data = new Dictionary<string, object>();
-
-            return new Info("Default", data);
+            return new Info("Default");
         }
 
     }
