@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using NaughtyBiker.Editor.UnityTests.Stubs;
 using NaughtyBiker.InfoObjects;
+using NaughtyBiker.InfoObjects.Delegates;
 using NaughtyBiker.Signals;
+using NaughtyBiker.Signals.Installers;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
@@ -19,7 +21,6 @@ namespace NaughtyBiker.Editor.UnityTests.InfoObjects {
 
 		[UnityTest]
 		public IEnumerator InfoObjectControl_InfoObjectWithTagDoesntExist_CallCreateInfoObjectOnStart() {
-
 			bool isCreated = false;
 			
 			CreateInfoObject createInfoObject = (prefab, tag) => {
@@ -41,7 +42,6 @@ namespace NaughtyBiker.Editor.UnityTests.InfoObjects {
 
 		[UnityTest]
 		public IEnumerator InfoObjectControl_InfoObjectWithTagDoesExist_GetExistingInfoObjectOnStart() {
-
 			bool isCreated = false;
 
 			GameObject obj1 = new GameObject();
@@ -69,7 +69,6 @@ namespace NaughtyBiker.Editor.UnityTests.InfoObjects {
 
 		[UnityTest]
 		public IEnumerator InfoObjectControl_FiringInitializeSignal_CallsFireAllOnInfoObject() {
-
 			InfoObjectStub infoObj = null;
 
 			CreateInfoObject createInfoObject = (prefab, tag) => {

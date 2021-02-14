@@ -4,14 +4,14 @@
     * of data at once.
     *
     * @author Julian Sangillo
-    * @version 1.0
+    * @version 2.0
+    * 
+    * @see SignalsInstaller
     */
     public class InitializeSignal {
-
         /**
-        * Main constructor.
+        * Default constructor
         */
         public InitializeSignal() { }
-        
     }
 }

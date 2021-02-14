@@ -1,5 +1,6 @@
 ﻿using System;
 using NaughtyBiker.LevelManagement;
+using NaughtyBiker.LevelManagement.Installers;
 using NaughtyBiker.LevelManagement.Interfaces;
 using NaughtyBiker.Wrappers.Interfaces;
 using NSubstitute;

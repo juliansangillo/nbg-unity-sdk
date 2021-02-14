@@ -4,8 +4,9 @@ namespace NaughtyBiker.InfoObjects.Interfaces {
     * is to persist between scenes, it must have DontDestroyOnLoad attached as well.
     *
     * @author Julian Sangillo
-    * @version 1.0
-    * @see IInfo
+    * @version 2.0
+    *
+    * @see InfoObjectControl
     */
 	public interface IInfoObject {
         /**

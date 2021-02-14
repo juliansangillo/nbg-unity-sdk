@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using NaughtyBiker.InfoObjects.Delegates;
 using NaughtyBiker.InfoObjects.Interfaces;
 
 namespace NaughtyBiker.InfoObjects {
@@ -7,21 +8,17 @@ namespace NaughtyBiker.InfoObjects {
     * Default implementation of IInfo
     * 
     * @author Julian Sangillo
-    * @version 1.0
+    * @version 2.0
     *
     * @see InfoObject
     */
     public class Info : IInfo {
-
         private IDictionary<string, object> data;
         private StateChange stateChanged;
-
         private string id;
 
         /**
-        * Default Constructor
-        *
-        * @param id A string that can be used as a unique identifier for this collection of info
+        * @param infoId A string that can be used as an identifier for this collection of info. Should be unique
         */
         public Info(string infoId) {
             this.Id = infoId;
@@ -30,8 +27,8 @@ namespace NaughtyBiker.InfoObjects {
         }
 
         /**
-        * @param id A string that can be used as a unique identifier for this collection of info
-        * @param data A hash table for storing the info added by other objects
+        * @param infoId A string that can be used as an identifier for this collection of info. Should be unique
+        * @param data A dictionary where all info will be hashed
         */
         public Info(string infoId, IDictionary<string, object> data) {
             this.Id = infoId;
@@ -40,8 +37,8 @@ namespace NaughtyBiker.InfoObjects {
         }
 
         /**
-        * @param id A string that can be used as a unique identifier for this collection of info
-        * @param stateChanged The callback function to be called when a value stored in this info object has been changed
+        * @param infoId A string that can be used as an identifier for this collection of info. Should be unique
+        * @param stateChanged The delegate that gets called when the state of this info object has been changed
         */
         public Info(string infoId, StateChange stateChanged) {
             this.Id = infoId;
@@ -50,9 +47,9 @@ namespace NaughtyBiker.InfoObjects {
         }
 
         /**
-        * @param id A string that can be used as a unique identifier for this collection of info
-        * @param data A hash table for storing the info added by other objects
-        * @param stateChanged The callback function to be called when a value stored in this info object has been changed
+        * @param infoId A string that can be used as an identifier for this collection of info. Should be unique
+        * @param data A dictionary where all info will be hashed
+        * @param stateChanged The delegate that gets called when the state of this info object has been changed
         */
         public Info(string infoId, IDictionary<string, object> data, StateChange stateChanged) {
             this.Id = infoId;
@@ -60,35 +57,21 @@ namespace NaughtyBiker.InfoObjects {
             this.StateChanged = stateChanged;
         }
 
-        /**
-        * Default implementation of IInfo.Data
-        *
-        * @return The current hash table where all info is stored
-        */
+        /// Default implementation of IInfo.Data
         public IDictionary<string, object> Data {
             get {
                 return data;
             }
         }
 
-        /**
-        * Default implementation of IInfo.StateChanged
-        *
-        * @param stateChanged The callback function to be called when a value stored in this info object has been changed
-        */
+        /// Default implementation of IInfo.StateChanged
         public StateChange StateChanged {
             set {
                 stateChanged = value;
             }
         }
 
-        /**
-        * Default implementation of IInfo.Id
-        *
-        * @param id (Set only) A string that can be used as a unique identifier for this collection of info
-        *
-        * @return The current info id
-        */
+        /// Default implementation of IInfo.Id
         public string Id {
             get {
                 return id;
@@ -102,13 +85,13 @@ namespace NaughtyBiker.InfoObjects {
         * Default implementation of <a href="d3/dd1/interface_i_info.html#a7ade3a9fcbb1f791627e2ab87495d986">IInfo.this[string key]</a>
         *
         * @param key The key string that uniquely identifies a stored value
-        * @param value (Set only) The value to assign to the given key. May be of any type
+        * @param value The value to assign to the given key. May be of any type
         *
         * @return The value identified by its key
         *
         * @throws ArgumentNullException Raised when the key parameter is null
         * @throws ArgumentException Raised when the key parameter is an empty string
-        * @throws KeyNotFoundException (Get only) Raised when the key parameter doesn't exist in this info object
+        * @throws KeyNotFoundException Raised when the key parameter doesn't exist in this info object
         */
         public object this[string key] {
             get {
@@ -131,8 +114,7 @@ namespace NaughtyBiker.InfoObjects {
         * @throws KeyNotFoundException Raised when the key parameter doesn't exist in this info object
         */
         public object Get(string key) {
-
-            if(string.IsNullOrEmpty(key))
+            if(string.IsNullOrWhiteSpace(key))
                 if(key == null)
                     throw new ArgumentNullException("Cannot find value when key is 'null'");
                 else
@@ -156,8 +138,7 @@ namespace NaughtyBiker.InfoObjects {
         * @throws ArgumentException Raised when the key parameter is an empty string
         */
         public void Set(string key, object value) {
-            
-            if(string.IsNullOrEmpty(key))
+            if(string.IsNullOrWhiteSpace(key))
                 if(key == null)
                     throw new ArgumentNullException("Cannot set value of a 'null' key");
                 else
@@ -169,7 +150,6 @@ namespace NaughtyBiker.InfoObjects {
                 data.Add(key, value);
 
             stateChanged(this.Id, key, value);
-
         }
 
         /**
@@ -183,7 +163,6 @@ namespace NaughtyBiker.InfoObjects {
         * @throws ArgumentException Raised when the key parameter is an empty string
         */
         public bool Exists(string key) {
-
             if(string.IsNullOrEmpty(key))
                 if(key == null)
                     throw new ArgumentNullException("Cannot find a 'null' key");
@@ -192,6 +171,5 @@ namespace NaughtyBiker.InfoObjects {
                     
             return data.ContainsKey(key);
         }
-
     }
 }

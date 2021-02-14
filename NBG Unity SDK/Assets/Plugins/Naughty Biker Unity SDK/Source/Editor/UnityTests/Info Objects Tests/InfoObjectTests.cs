@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using NaughtyBiker.InfoObjects;
+using NaughtyBiker.InfoObjects.Installers;
 using NaughtyBiker.InfoObjects.Interfaces;
 using NaughtyBiker.Signals;
+using NaughtyBiker.Signals.Installers;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;

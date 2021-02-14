@@ -11,10 +11,11 @@ namespace NaughtyBiker.LevelManagement {
     * Default implementation of ILevelManager.
     *
     * @author Julian Sangillo
-    * @version 1.0
+    * @version 2.0
+    * 
+    * @see LevelManagerInstaller
     */
 	public class LevelManager : ILevelManager {
-
         private readonly IDictionary<string, int> levels;
         private readonly ISceneManager sceneManager;
         private readonly ISceneUtility sceneUtility;
@@ -23,22 +24,14 @@ namespace NaughtyBiker.LevelManagement {
         private int activeLevel;
         private string firstLevel;
 
-        /**
-        * Default implementation of ILevelManager.ActiveLevelLabel
-        *
-        * @return The label of the active level
-        */
+        /// Default implementation of ILevelManager.ActiveLevelLabel
         public string ActiveLevelLabel {
             get {
                 return labels[activeLevel];
             }
         }
 
-        /**
-        * Default implementation of ILevelManager.ActiveLevel
-        *
-        * @return The index of the active level
-        */
+        /// Default implementation of ILevelManager.ActiveLevel
 		public int ActiveLevel {
             get {
                 return activeLevel;
@@ -47,10 +40,6 @@ namespace NaughtyBiker.LevelManagement {
 
         /**
         * Default implementation of ILevelManager.FirstLevel
-        *
-        * @param value The name of the first level
-        *
-        * @return The name of the first level
         *
         * @throws ArgumentNullException Raised when the name parameter is null
         * @throws ArgumentException Raised when a level by the name provided does not exist. In the event this happens, please verify
@@ -107,7 +96,7 @@ namespace NaughtyBiker.LevelManagement {
         }
 
         /**
-        * Default implementation of ILevelManager.GetLevel
+        * Default implementation of ILevelManager.GetLevel(string name)
         * 
         * @param name The name of the level
         *
@@ -129,7 +118,7 @@ namespace NaughtyBiker.LevelManagement {
 		}
 
         /**
-        * Default implementation of ILevelManager.GetLevelLabel(int)
+        * Default implementation of ILevelManager.GetLevelLabel(int index)
         *
         * @param index The build index for the level
         *
@@ -149,7 +138,7 @@ namespace NaughtyBiker.LevelManagement {
 		}
 
         /**
-        * Default implementation of ILevelManager.GetLevelLabel(string)
+        * Default implementation of ILevelManager.GetLevelLabel(string name)
         *
         * @param name The name of the level
         *
@@ -188,11 +177,6 @@ namespace NaughtyBiker.LevelManagement {
         }
 
         /**
-        * Loads next level according to the scene's build index and the order the scenes are listed in Build Settings. This allows
-        * you to let LevelManager determine the next level and take you there automatically, in the case that levels are progressed
-        * sequentially in your game, without having to keep track of all level names. If there is no next level, this will take you
-        * back to the first scene listed in Build Settings.
-        *
         * Default implementation of ILevelManager.LoadNextLevel()
         */
         public void LoadNextLevel() {
@@ -207,11 +191,6 @@ namespace NaughtyBiker.LevelManagement {
         }
 
         /**
-        * Loads previous level according to the scene's build index and the order the scenes are listed in Build Settings. This allows
-        * you to let LevelManager determine the previous level and take you there automatically, in the case that levels are progressed
-        * sequentially in your game, without having to keep track of all the level names. If there is no previous level, this will raise
-        * an InvalidOperationException.
-        * 
         * Default implementation of ILevelManager.LoadPreviousLevel()
         *
         * @throws InvalidOperationException Raised when you are already on level index 0 and there is no previous level to load
@@ -228,11 +207,6 @@ namespace NaughtyBiker.LevelManagement {
 		}
 
         /**
-        * Loads the first level, which is index 0 by default, but can be changed by setting the FirstLevel property. This is useful if
-        * you want to bring a player back to the first level repeatedly during the game, but you don't want to repeatedly give the level
-        * name. It is also useful to be able to choose which level is the "first level" because index 0 is typically the main menu in a
-        * lot of games, which may not be where you actually want to bring the player.
-        *
         * Default implementation of ILevelManager.LoadFirstLevel()
         */
 		public void LoadFirstLevel() {
@@ -246,19 +220,14 @@ namespace NaughtyBiker.LevelManagement {
         * Default implementation of ILevelManager.ReloadLevel()
         */
         public void ReloadLevel() {
-
             sceneManager.LoadScene(activeLevel);
-
         }
 
 		[Inject]
         private LevelManager(IDictionary<string, int> levels, ISceneManager sceneManager, ISceneUtility sceneUtility) {
-
             this.levels = levels;
             this.sceneManager = sceneManager;
             this.sceneUtility = sceneUtility;
-
-        }
-        
+        }       
     }
 }

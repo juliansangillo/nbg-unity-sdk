@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using NaughtyBiker.InfoObjects.Delegates;
 
 namespace NaughtyBiker.InfoObjects.Interfaces {
     /**
@@ -6,52 +7,37 @@ namespace NaughtyBiker.InfoObjects.Interfaces {
     * key-value pairs to store the data. Keys must be strings while values could be of any type.
     *
     * @author Julian Sangillo
-    * @version 1.0
-    * @see Info
+    * @version 2.0
+    *
+    * @see IInfoObject
     */
     public interface IInfo {
-        
-        /**
-        * Data property (read-only). Gets the data object.
-        *
-        * @return The current hash table where all info is stored
-        */
+        /// The current dictionary where all info is hashed
         IDictionary<string, object> Data { get; }
 
-        /**
-        * StateChanged property (write-only). Sets the stateChanged delegate.
-        * 
-        * @param stateChanged The callback function to be called when a value stored in this info object has been changed
-        */
+        /// The delegate that gets called when the state of this info object has been changed
         StateChange StateChanged { set; }
 
-        /**
-        * Id property. Gets and Sets the id.
-        *
-        * @param id (Set only) A string that can be used as a unique identifier for this collection of info
-        *
-        * @return The current info id
-        */
+        /// A string that can be used as an identifier for this collection of info. Should be unique
         string Id { get; set; }
 
         /**
-        * A custom indexer for the data in this info object. When getting values with the indexer, it will automatically 
-        * cast the result to the appropriate type. When setting values, if the key does not already exist, it will add
-        * one.
+        * A custom indexer for the data in this info object. When getting values with the indexer, the result will need 
+        * to be cast to the appropriate type. When setting values, if the key does not already exist, it will add it.
         *
         * @param key The key string that uniquely identifies a stored value
-        * @param value (Set only) The value to assign to the given key. May be of any type
+        * @param value The value to assign to the given key. May be of any type
         *
         * @return The value identified by its key
         *
         * @throws ArgumentNullException Raised when the key parameter is null
         * @throws ArgumentException Raised when the key parameter is an empty string
-        * @throws KeyNotFoundException (Get only) Raised when the key parameter doesn't exist in this info object
+        * @throws KeyNotFoundException Raised when the key parameter doesn't exist in this info object
         */
         object this[string key] { get; set; }
 
         /**
-        * Gets the value of the provided key. Returned value must be manually casted to the needed type.
+        * Gets the value of the provided key. Returned value must be manually cast to the needed type.
         *
         * @param key The key string that uniquely identifies a stored value
         * 
@@ -65,7 +51,7 @@ namespace NaughtyBiker.InfoObjects.Interfaces {
 
         /**
         * Sets the value of the provided key. When setting values, if the key does not already exist, it will add
-        * one.
+        * it.
         *
         * @param key The key string that uniquely identifies a stored value
         * @param value The value to assign to the given key. May be of any type
@@ -86,6 +72,5 @@ namespace NaughtyBiker.InfoObjects.Interfaces {
         * @throws ArgumentException Raised when the key parameter is an empty string
         */
         bool Exists(string key);
-
     }
 }

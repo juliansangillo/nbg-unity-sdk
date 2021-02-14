@@ -10,25 +10,24 @@ namespace NaughtyBiker.InfoObjects {
     * Component Menu: "Naughty Biker Games / Info Objects / Initialize Persistent Data"
     *
     * @author Julian Sangillo
-    * @version 1.0
+    * @version 2.0
     */
     [AddComponentMenu("Naughty Biker Games/Info Objects/Initialize Persistent Data")]
     public class InitializePersistentData : MonoBehaviour {
-
         private SignalBus signalBus;
 
+        /**
+        * Construction method. Used to initialize monobehaviours
+        *
+        * @param signalBus The Zenject signal bus. Used to fire Zenject signals
+        */
         [Inject]
-        private void Construct(SignalBus signalBus) {
-
+        public void Construct(SignalBus signalBus) {
             this.signalBus = signalBus;
-
         }
 
         private void Start() {
-            
             signalBus.Fire(new InitializeSignal());
-
         }
-
     }
 }

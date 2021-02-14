@@ -2,6 +2,7 @@
 using Zenject;
 using NaughtyBiker.Signals;
 using NaughtyBiker.InfoObjects.Interfaces;
+using NaughtyBiker.InfoObjects.Delegates;
 
 namespace NaughtyBiker.InfoObjects {
     /**
@@ -12,7 +13,7 @@ namespace NaughtyBiker.InfoObjects {
     * Component Menu: "Naughty Biker Games / Info Objects / Info Object Control"
     *
     * @author Julian Sangillo
-    * @version 1.0
+    * @version 2.0
     * 
     * @see InfoObjectInstaller
     * @see InitializePersistentData
@@ -20,7 +21,6 @@ namespace NaughtyBiker.InfoObjects {
     */
     [AddComponentMenu("Naughty Biker Games/Info Objects/Info Object Control")]
     public class InfoObjectControl : MonoBehaviour {
-
         [SerializeField] private GameObject infoObjectPrefab = null;
         [SerializeField] private string objectTag = "";
 
@@ -66,11 +66,7 @@ namespace NaughtyBiker.InfoObjects {
             }
         }
 
-        /**
-        * InfoObj property (read-only). Gets the infoObj object.
-        *
-        * @return The current info object anchored to this control script
-        */
+        /// The current info object anchored to this control script
         public IInfoObject InfoObj {
             get {
                 return infoObj;
@@ -78,7 +74,6 @@ namespace NaughtyBiker.InfoObjects {
         }
 
         private void Start() {
-
             GameObject obj = GameObject.FindWithTag(objectTag);
 
             if(obj != null)
@@ -87,16 +82,6 @@ namespace NaughtyBiker.InfoObjects {
                 this.infoObj = createInfoObject(infoObjectPrefab, objectTag);
 
             signalBus.Subscribe<InitializeSignal>(this.infoObj.FireAll);
-            
         }
-
     }
-
-    /**
-    * A delegate function to call when requesting Zenject to provide us with a new info object.
-    *
-    * @param infoObjectPrefab The reference to the info object prefab Zenject should use to instantiate the info object
-    * @param objectTag The tag to set on the new info object used to identify that object.
-    */
-    public delegate IInfoObject CreateInfoObject(GameObject infoObjectPrefab, string objectTag);
 }
