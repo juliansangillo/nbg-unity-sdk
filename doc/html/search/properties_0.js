@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['data_86',['Data',['../d6/d12/class_naughty_biker_1_1_info_objects_1_1_info.html#aa54138a89b43f97c5589cd50883f1cc9',1,'NaughtyBiker.InfoObjects.Info.Data()'],['../d5/daf/interface_naughty_biker_1_1_info_objects_1_1_interfaces_1_1_i_info.html#a34e0339c4079e1a5bb750f92a69d777e',1,'NaughtyBiker.InfoObjects.Interfaces.IInfo.Data()']]]
+  ['activelevel_125',['ActiveLevel',['../df/d4c/interface_naughty_biker_1_1_level_management_1_1_interfaces_1_1_i_level_manager.html#a4ce377898da774899b7b070242fd56b7',1,'NaughtyBiker.LevelManagement.Interfaces.ILevelManager.ActiveLevel()'],['../de/ddf/class_naughty_biker_1_1_level_management_1_1_level_manager.html#a85fa282262002e0f932315c60119bd79',1,'NaughtyBiker.LevelManagement.LevelManager.ActiveLevel()']]],
+  ['activelevellabel_126',['ActiveLevelLabel',['../df/d4c/interface_naughty_biker_1_1_level_management_1_1_interfaces_1_1_i_level_manager.html#a3d1f154ec6df22d7330db96879941786',1,'NaughtyBiker.LevelManagement.Interfaces.ILevelManager.ActiveLevelLabel()'],['../de/ddf/class_naughty_biker_1_1_level_management_1_1_level_manager.html#a05403b9833c51a9102c96f9c74ec8d0d',1,'NaughtyBiker.LevelManagement.LevelManager.ActiveLevelLabel()']]]
 ];

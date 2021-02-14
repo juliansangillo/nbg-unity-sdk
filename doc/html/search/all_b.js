@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reloadlevel_37',['ReloadLevel',['../df/d4c/interface_naughty_biker_1_1_level_management_1_1_interfaces_1_1_i_level_manager.html#acb55b081e895685fd179c33623050734',1,'NaughtyBiker.LevelManagement.Interfaces.ILevelManager.ReloadLevel()'],['../de/ddf/class_naughty_biker_1_1_level_management_1_1_level_manager.html#af26937c44f6e41b70ed7db04fe94f8a6',1,'NaughtyBiker.LevelManagement.LevelManager.ReloadLevel()']]]
+  ['preserveduplicates_55',['PreserveDuplicates',['../d1/df0/class_naughty_biker_1_1_destroy_1_1_dont_destroy_on_load.html#ab393f813076c858fad034640cb4ba6bc',1,'NaughtyBiker::Destroy::DontDestroyOnLoad']]]
 ];

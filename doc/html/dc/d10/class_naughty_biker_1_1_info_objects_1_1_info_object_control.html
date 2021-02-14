@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../nbg-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Naughty Biker Unity Software Development Kit
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">2.0.0</span>
    </div>
    <div id="projectbrief">A Unity SDK that can be integrated with any game project.</div>
   </td>
@@ -96,8 +96,8 @@ $(document).ready(function(){initNavTree('dc/d10/class_naughty_biker_1_1_info_ob
 
 <div class="header">
   <div class="summary">
-<a href="#pri-attribs">Serialized Fields</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../d7/d13/class_naughty_biker_1_1_info_objects_1_1_info_object_control-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">NaughtyBiker.InfoObjects.InfoObjectControl Class Reference</div>  </div>
@@ -108,46 +108,46 @@ $(document).ready(function(){initNavTree('dc/d10/class_naughty_biker_1_1_info_ob
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/class_naughty_biker_1_1_info_objects_1_1_info_object_control__inherit__graph.svg" width="202" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/class_naughty_biker_1_1_info_objects_1_1_info_object_control__inherit__graph.svg" width="202" height="346"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for NaughtyBiker.InfoObjects.InfoObjectControl:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/da7/class_naughty_biker_1_1_info_objects_1_1_info_object_control__coll__graph.svg" width="362" height="647"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/da7/class_naughty_biker_1_1_info_objects_1_1_info_object_control__coll__graph.svg" width="350" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>A monobehaviour that is the info object control script. Its responsibility is to maintain an info object. When loaded, it will search the scene for its info object. If found, it will reference that object so others can use it. If not found, it will request Zenject to instantiate a default one for it to use.<br  />
 </p>
-<p>Component Menu: "Naughty Biker Unity SDK / Info Objects / Info Object Control"</p>
+<p>Component Menu: "Naughty Biker Games / Info Objects / Info Object Control"</p>
 <dl class="section author"><dt>Author</dt><dd>Julian Sangillo </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/de0/class_naughty_biker_1_1_info_objects_1_1_info_object_installer.html">InfoObjectInstaller</a> </dd>
+<dl class="section version"><dt>Version</dt><dd>2.0</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>InfoObjectInstaller </dd>
 <dd>
 <a class="el" href="../../d3/dfe/class_naughty_biker_1_1_info_objects_1_1_initialize_persistent_data.html">InitializePersistentData</a> </dd>
 <dd>
 <a class="el" href="../../da/dd4/class_naughty_biker_1_1_signals_1_1_initialize_signal.html">NaughtyBiker.Signals.InitializeSignal</a> </dd></dl>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Serialized Fields</h2></td></tr>
-<tr class="memitem:ac570eb9eb5f3e01ca2d9ec723b4909ed"><td class="memItemLeft" align="right" valign="top"><a id="ac570eb9eb5f3e01ca2d9ec723b4909ed"></a>
-GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d10/class_naughty_biker_1_1_info_objects_1_1_info_object_control.html#ac570eb9eb5f3e01ca2d9ec723b4909ed">infoObjectPrefab</a> = Resources.Load&lt;GameObject&gt;(&quot;Info Object&quot;)</td></tr>
-<tr class="memdesc:ac570eb9eb5f3e01ca2d9ec723b4909ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference to the prefab of an info object. By default, this references the default prefab provided by the SDK located in the Resources folder. This can be overriden with a custom prefab. <br /></td></tr>
-<tr class="separator:ac570eb9eb5f3e01ca2d9ec723b4909ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6081b6c032b7f0c6005b71e3a9cd5c3"><td class="memItemLeft" align="right" valign="top"><a id="ab6081b6c032b7f0c6005b71e3a9cd5c3"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d10/class_naughty_biker_1_1_info_objects_1_1_info_object_control.html#ab6081b6c032b7f0c6005b71e3a9cd5c3">objectTag</a> = &quot;&quot;</td></tr>
-<tr class="memdesc:ab6081b6c032b7f0c6005b71e3a9cd5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tag to set on a new info object used to identify that object. Please verify that such a tag exists in Unity's tag list before applying. This must be unique! <br /></td></tr>
-<tr class="separator:ab6081b6c032b7f0c6005b71e3a9cd5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a59c96ff91ee9128dc8c3721a462abd03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd2/class_naughty_biker_1_1_info_objects_1_1_info_object.html">InfoObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d10/class_naughty_biker_1_1_info_objects_1_1_info_object_control.html#a59c96ff91ee9128dc8c3721a462abd03">InfoObj</a><code> [get]</code></td></tr>
-<tr class="separator:a59c96ff91ee9128dc8c3721a462abd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5edf471fb82a68569c3bbb992dde17ef"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d10/class_naughty_biker_1_1_info_objects_1_1_info_object_control.html#a5edf471fb82a68569c3bbb992dde17ef">InfoObjectPrefab</a><code> [set]</code></td></tr>
+<tr class="separator:a5edf471fb82a68569c3bbb992dde17ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e6ec4964c97fa9b6bc707b85cd2492"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d10/class_naughty_biker_1_1_info_objects_1_1_info_object_control.html#a79e6ec4964c97fa9b6bc707b85cd2492">ObjectTag</a><code> [set]</code></td></tr>
+<tr class="separator:a79e6ec4964c97fa9b6bc707b85cd2492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b056480b58e39dfa4cc5ad0338c7b0d"><td class="memItemLeft" align="right" valign="top"><a id="a3b056480b58e39dfa4cc5ad0338c7b0d"></a>
+<a class="el" href="../../dc/d34/interface_naughty_biker_1_1_info_objects_1_1_interfaces_1_1_i_info_object.html">IInfoObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d10/class_naughty_biker_1_1_info_objects_1_1_info_object_control.html#a3b056480b58e39dfa4cc5ad0338c7b0d">InfoObj</a><code> [get]</code></td></tr>
+<tr class="memdesc:a3b056480b58e39dfa4cc5ad0338c7b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current info object anchored to this control script. <br /></td></tr>
+<tr class="separator:a3b056480b58e39dfa4cc5ad0338c7b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad1d587c6bec2dc14b961f75f1c278ae5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d10/class_naughty_biker_1_1_info_objects_1_1_info_object_control.html#ad1d587c6bec2dc14b961f75f1c278ae5">Construct</a> (CreateInfoObject createInfoObject, SignalBus signalBus)</td></tr>
+<tr class="separator:ad1d587c6bec2dc14b961f75f1c278ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Property Documentation</h2>
-<a id="a59c96ff91ee9128dc8c3721a462abd03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59c96ff91ee9128dc8c3721a462abd03">&#9670;&nbsp;</a></span>InfoObj</h2>
+<a id="a5edf471fb82a68569c3bbb992dde17ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5edf471fb82a68569c3bbb992dde17ef">&#9670;&nbsp;</a></span>InfoObjectPrefab</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,22 +156,81 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/dd2/class_naughty_biker_1_1_info_objects_1_1_info_object.html">InfoObject</a> NaughtyBiker.InfoObjects.InfoObjectControl.InfoObj</td>
+          <td class="memname">GameObject NaughtyBiker.InfoObjects.InfoObjectControl.InfoObjectPrefab</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>InfoObj property (read-only). Gets the infoObj object.</p>
-<dl class="section return"><dt>Returns</dt><dd>The current info object anchored to this control script </dd></dl>
+<p>A reference to the prefab of an info object. By default, this references the default prefab provided by the SDK located in the Resources folder. This can be overriden with a custom prefab. </p>
+
+</div>
+</div>
+<a id="a79e6ec4964c97fa9b6bc707b85cd2492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79e6ec4964c97fa9b6bc707b85cd2492">&#9670;&nbsp;</a></span>ObjectTag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string NaughtyBiker.InfoObjects.InfoObjectControl.ObjectTag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The tag to set on a new info object used to identify that object. Please verify that such a tag exists in Unity's tag list before applying. This must be unique! </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad1d587c6bec2dc14b961f75f1c278ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1d587c6bec2dc14b961f75f1c278ae5">&#9670;&nbsp;</a></span>Construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NaughtyBiker.InfoObjects.InfoObjectControl.Construct </td>
+          <td>(</td>
+          <td class="paramtype">CreateInfoObject&#160;</td>
+          <td class="paramname"><em>createInfoObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SignalBus&#160;</td>
+          <td class="paramname"><em>signalBus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Construction method. Used to initialize monobehaviours</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">createInfoObject</td><td>Delegate function from the installer that requests Zenject to create an info object </td></tr>
+    <tr><td class="paramname">signalBus</td><td>The Zenject signal bus. Used to fire Zenject signals </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Naughty Biker Unity SDK/Source/Info Objects/InfoObjectControl.cs</li>
+<li>Naughty Biker Games/Source/Info Objects/InfoObjectControl.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

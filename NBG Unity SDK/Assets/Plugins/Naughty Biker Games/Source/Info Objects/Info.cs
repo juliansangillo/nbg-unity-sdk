@@ -82,7 +82,7 @@ namespace NaughtyBiker.InfoObjects {
         }
 
         /**
-        * Default implementation of <a href="d3/dd1/interface_i_info.html#a7ade3a9fcbb1f791627e2ab87495d986">IInfo.this[string key]</a>
+        * Default implementation of IInfo.this[string key]
         *
         * @param key The key string that uniquely identifies a stored value
         * @param value The value to assign to the given key. May be of any type

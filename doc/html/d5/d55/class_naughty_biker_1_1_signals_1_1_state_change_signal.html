@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../nbg-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Naughty Biker Unity Software Development Kit
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">2.0.0</span>
    </div>
    <div id="projectbrief">A Unity SDK that can be integrated with any game project.</div>
   </td>
@@ -113,15 +113,22 @@ $(document).ready(function(){initNavTree('d5/d55/class_naughty_biker_1_1_signals
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>A Zenject signal that can be fired from the signal bus every time the state of an object with key-value pairs change.</p>
 <dl class="section author"><dt>Author</dt><dd>Julian Sangillo </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>2.0</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>SignalsInstaller </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a1fc4d9ca320dda5fb2eda9908cf0ae8d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d55/class_naughty_biker_1_1_signals_1_1_state_change_signal.html#a1fc4d9ca320dda5fb2eda9908cf0ae8d">ObjectId</a><code> [get]</code></td></tr>
+<tr class="memitem:a1fc4d9ca320dda5fb2eda9908cf0ae8d"><td class="memItemLeft" align="right" valign="top"><a id="a1fc4d9ca320dda5fb2eda9908cf0ae8d"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d55/class_naughty_biker_1_1_signals_1_1_state_change_signal.html#a1fc4d9ca320dda5fb2eda9908cf0ae8d">ObjectId</a><code> [get]</code></td></tr>
+<tr class="memdesc:a1fc4d9ca320dda5fb2eda9908cf0ae8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The object's identifier. <br /></td></tr>
 <tr class="separator:a1fc4d9ca320dda5fb2eda9908cf0ae8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac670b474f99157aa4fc9f156e54773e6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d55/class_naughty_biker_1_1_signals_1_1_state_change_signal.html#ac670b474f99157aa4fc9f156e54773e6">Key</a><code> [get]</code></td></tr>
+<tr class="memitem:ac670b474f99157aa4fc9f156e54773e6"><td class="memItemLeft" align="right" valign="top"><a id="ac670b474f99157aa4fc9f156e54773e6"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d55/class_naughty_biker_1_1_signals_1_1_state_change_signal.html#ac670b474f99157aa4fc9f156e54773e6">Key</a><code> [get]</code></td></tr>
+<tr class="memdesc:ac670b474f99157aa4fc9f156e54773e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The key whose value was changed. <br /></td></tr>
 <tr class="separator:ac670b474f99157aa4fc9f156e54773e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a882f4fd38a7ab5f03e5cba12b59cbcd1"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d55/class_naughty_biker_1_1_signals_1_1_state_change_signal.html#a882f4fd38a7ab5f03e5cba12b59cbcd1">Value</a><code> [get]</code></td></tr>
+<tr class="memitem:a882f4fd38a7ab5f03e5cba12b59cbcd1"><td class="memItemLeft" align="right" valign="top"><a id="a882f4fd38a7ab5f03e5cba12b59cbcd1"></a>
+object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d55/class_naughty_biker_1_1_signals_1_1_state_change_signal.html#a882f4fd38a7ab5f03e5cba12b59cbcd1">Value</a><code> [get]</code></td></tr>
+<tr class="memdesc:a882f4fd38a7ab5f03e5cba12b59cbcd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The new value. <br /></td></tr>
 <tr class="separator:a882f4fd38a7ab5f03e5cba12b59cbcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -161,7 +168,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Main constructor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">objectId</td><td>Unique identifier of the object that changed state </td></tr>
@@ -173,81 +179,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Property Documentation</h2>
-<a id="ac670b474f99157aa4fc9f156e54773e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac670b474f99157aa4fc9f156e54773e6">&#9670;&nbsp;</a></span>Key</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string NaughtyBiker.Signals.StateChangeSignal.Key</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Key property (read-only). Gets the key.</p>
-<dl class="section return"><dt>Returns</dt><dd>The key whose value was changed </dd></dl>
-
-</div>
-</div>
-<a id="a1fc4d9ca320dda5fb2eda9908cf0ae8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fc4d9ca320dda5fb2eda9908cf0ae8d">&#9670;&nbsp;</a></span>ObjectId</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string NaughtyBiker.Signals.StateChangeSignal.ObjectId</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>ObjectId property (read-only). Gets the objectId.</p>
-<dl class="section return"><dt>Returns</dt><dd>The object's identifier </dd></dl>
-
-</div>
-</div>
-<a id="a882f4fd38a7ab5f03e5cba12b59cbcd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a882f4fd38a7ab5f03e5cba12b59cbcd1">&#9670;&nbsp;</a></span>Value</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">object NaughtyBiker.Signals.StateChangeSignal.Value</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Value property (read-only). Gets the value.</p>
-<dl class="section return"><dt>Returns</dt><dd>The new value </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Naughty Biker Unity SDK/Source/Signals/StateChangeSignal.cs</li>
+<li>Naughty Biker Games/Source/Signals/StateChangeSignal.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['exists_4',['Exists',['../d6/d12/class_naughty_biker_1_1_info_objects_1_1_info.html#a20331575cea440046b728e128e1699bd',1,'NaughtyBiker.InfoObjects.Info.Exists()'],['../d5/daf/interface_naughty_biker_1_1_info_objects_1_1_interfaces_1_1_i_info.html#a241faa6a6a3c9cc4f9c7460859051505',1,'NaughtyBiker.InfoObjects.Interfaces.IInfo.Exists()']]]
+  ['data_4',['Data',['../d6/d12/class_naughty_biker_1_1_info_objects_1_1_info.html#aa54138a89b43f97c5589cd50883f1cc9',1,'NaughtyBiker.InfoObjects.Info.Data()'],['../d5/daf/interface_naughty_biker_1_1_info_objects_1_1_interfaces_1_1_i_info.html#a34e0339c4079e1a5bb750f92a69d777e',1,'NaughtyBiker.InfoObjects.Interfaces.IInfo.Data()']]],
+  ['destroyafterseconds_5',['DestroyAfterSeconds',['../d4/ded/class_naughty_biker_1_1_destroy_1_1_destroy_after_seconds.html',1,'NaughtyBiker::Destroy']]],
+  ['dontdestroyonload_6',['DontDestroyOnLoad',['../d1/df0/class_naughty_biker_1_1_destroy_1_1_dont_destroy_on_load.html',1,'NaughtyBiker::Destroy']]]
 ];

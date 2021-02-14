@@ -1,6 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,78,116,105"/>
-<area shape="rect" id="node2" href="$d6/de0/class_naughty_biker_1_1_info_objects_1_1_info_object_installer.html" title=" " alt="" coords="188,5,379,47"/>
-<area shape="rect" id="node3" href="$d6/d66/class_naughty_biker_1_1_level_management_1_1_level_manager_installer.html" title=" " alt="" coords="164,71,403,112"/>
-<area shape="rect" id="node4" href="$dd/dab/class_naughty_biker_1_1_signals_1_1_signals_installer.html" title=" " alt="" coords="178,136,389,177"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,78,80,105"/>
+<area shape="rect" id="node2" href="$d4/dee/class_naughty_biker_1_1_info_objects_1_1_installers_1_1_info_object_base_installer.html" title=" " alt="" coords="140,5,379,47"/>
+<area shape="rect" id="node3" href="$d0/d03/class_naughty_biker_1_1_level_management_1_1_installers_1_1_level_manager_base_installer.html" title=" " alt="" coords="128,71,391,112"/>
+<area shape="rect" id="node5" href="$d7/d81/class_naughty_biker_1_1_signals_1_1_installers_1_1_signals_base_installer.html" title=" " alt="" coords="145,136,373,177"/>
+<area shape="rect" id="node4" href="$d1/d84/class_naughty_biker_1_1_level_management_1_1_installers_1_1_level_manager_scene_wrappers_installer.html" title=" " alt="" coords="439,63,717,119"/>
 </map>

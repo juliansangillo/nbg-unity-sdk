@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['data_1',['Data',['../d6/d12/class_naughty_biker_1_1_info_objects_1_1_info.html#aa54138a89b43f97c5589cd50883f1cc9',1,'NaughtyBiker.InfoObjects.Info.Data()'],['../d5/daf/interface_naughty_biker_1_1_info_objects_1_1_interfaces_1_1_i_info.html#a34e0339c4079e1a5bb750f92a69d777e',1,'NaughtyBiker.InfoObjects.Interfaces.IInfo.Data()']]],
-  ['destroyafterseconds_2',['DestroyAfterSeconds',['../d4/ded/class_naughty_biker_1_1_destroy_1_1_destroy_after_seconds.html',1,'NaughtyBiker::Destroy']]],
-  ['dontdestroyonload_3',['DontDestroyOnLoad',['../d1/df0/class_naughty_biker_1_1_destroy_1_1_dont_destroy_on_load.html',1,'NaughtyBiker::Destroy']]]
+  ['construct_2',['Construct',['../df/dd2/class_naughty_biker_1_1_info_objects_1_1_info_object.html#ac3db28d172ec35aaf06bf5bb88b4ed61',1,'NaughtyBiker.InfoObjects.InfoObject.Construct()'],['../dc/d10/class_naughty_biker_1_1_info_objects_1_1_info_object_control.html#ad1d587c6bec2dc14b961f75f1c278ae5',1,'NaughtyBiker.InfoObjects.InfoObjectControl.Construct()'],['../d3/dfe/class_naughty_biker_1_1_info_objects_1_1_initialize_persistent_data.html#ab941beed40d0d7972a808faeabd7bdd8',1,'NaughtyBiker.InfoObjects.InitializePersistentData.Construct()']]],
+  ['createinfoobject_3',['CreateInfoObject',['../db/d89/namespace_naughty_biker_1_1_info_objects_1_1_delegates.html#aac1b20527b32409a2b1f5bc0254d9eae',1,'NaughtyBiker::InfoObjects::Delegates']]]
 ];
