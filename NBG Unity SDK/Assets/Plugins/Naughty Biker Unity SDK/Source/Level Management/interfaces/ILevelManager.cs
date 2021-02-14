@@ -8,9 +8,9 @@ namespace NaughtyBiker.LevelManagement.Interfaces {
     * even if they are located in separate folders! To use, inject an ILevelManager object wherever needed using Zenject's "Inject" 
     * attribute.<br>
     *
-    * A Level Manager not only keeps track of the levels, it also initializes a list of display names from the actual names of
+    * A Level Manager not only keeps track of the levels, it also initializes a list of labels (display names) from the actual names of
     * the levels. This allows you to reuse the level's name for UI display purposes. For example, "UltimateLevel8-1_005" will be
-    * mapped to the display name "Ultimate Level 8-1 005". Below are the display name rules. <br>
+    * mapped to the label "Ultimate Level 8-1 005". Below are the label rules. <br>
     *
     * <ul>
     *   <li>Any set of letters starting with a capital is delimited with a space, except for the first one</li>
@@ -24,11 +24,71 @@ namespace NaughtyBiker.LevelManagement.Interfaces {
     public interface ILevelManager : IInitializable {
 
         /**
-        * LevelName property (read-only). Gets level name.
+        * ActiveLevelName property (read-only). Gets the label of the active level.
         *
-        * @return The display name of the active level
+        * @return The label of the active level
         */
-        string LevelName { get; }
+        string ActiveLevelLabel { get; }
+
+        /**
+        * ActiveLevel property (read-only). Gets the index of the active level.
+        *
+        * @return The index of the active level
+        */
+        int ActiveLevel { get; }
+
+        /**
+        * FirstLevel property (read/write). The name of the first level. This will always be set to level 0 
+        * by default unless otherwise stated. Is used with LoadFirstLevel to go to this level.
+        *
+        * @param value The name of the first level
+        *
+        * @return The name of the first level
+        *
+        * @throws ArgumentNullException Raised when the name parameter is null
+        * @throws ArgumentException Raised when a level by the name provided does not exist. In the event this happens, please verify
+        * the scenes added to Build Settings
+        */
+        string FirstLevel { get; set; }
+
+        /**
+        * Gets the index of a level when given the level's name.
+        * 
+        * @param name The name of the level
+        *
+        * @return The index of the level
+        *
+        * @throws ArgumentNullException Raised when the name parameter is null
+        * @throws ArgumentException Raised when a level by the name provided does not exist. In the event this happens, please verify
+        * the scenes added to Build Settings
+        */
+        int GetLevel(string name);
+
+        /**
+        * Gets the label of a level when given the level's index.
+        *
+        * @param index The build index for the level
+        *
+        * @return The label of the level
+        *
+        * @throws ArgumentNullException Raised when the index parameter is a negative value
+        * @throws ArgumentException Raised when a level by the index provided does not exist. In the event this happens, please verify
+        * the scenes added to Build Settings
+        */
+        string GetLevelLabel(int index);
+
+        /**
+        * Gets the label of a level when given the level's name.
+        *
+        * @param name The name of the level
+        *
+        * @return The label of the level
+        *
+        * @throws ArgumentNullException Raised when the name parameter is null
+        * @throws ArgumentException Raised when a level by the name provided does not exist. In the event this happens, please verify
+        * the scenes added to Build Settings
+        */
+        string GetLevelLabel(string name);
 
         /**
         * Loads the level (or scene) selected by name and sets that as the active level, while unloading the current active level.
@@ -49,7 +109,19 @@ namespace NaughtyBiker.LevelManagement.Interfaces {
         void LoadNextLevel();
 
         /**
-        * Reloads the current active level.
+        * Loads the previous level.
+        *
+        * @throws InvalidOperationException Raised when you are already on level index 0 and there is no previous level to load
+        */
+        void LoadPreviousLevel();
+
+        /**
+        * Loads the first level.
+        */
+        void LoadFirstLevel();
+
+        /**
+        * Reloads the active level.
         */
         void ReloadLevel();
         
