@@ -7,13 +7,13 @@ using NaughtyBiker.Destroy;
 namespace NaughtyBiker.Editor.UnityTests.Destroy {
 	public class DestroyAfterSecondsTests : MonobehaviourTests {
 		[UnityTest]
-		public IEnumerator DestroyAfterSeconds_SecondsSetTo2AndOnly1SecondPasses_GameObjectShouldNotBeDestroyed() {
-			float secondsToWait = 1f;
+		public IEnumerator DestroyAfterSeconds_DestroyAfterPoint2SecondsAndOnlyPoint1SecondPasses_GameObjectShouldNotBeDestroyed() {
+			float secondsToWait = 0.1f;
             
             GameObject obj = new GameObject();
             DestroyAfterSeconds destroyAfterSeconds = obj.AddComponent<DestroyAfterSeconds>();
 
-            destroyAfterSeconds.Seconds = 2f;
+            destroyAfterSeconds.Seconds = 0.2f;
 
 			yield return new WaitForSeconds(secondsToWait);
 
@@ -21,13 +21,13 @@ namespace NaughtyBiker.Editor.UnityTests.Destroy {
 		}
 
         [UnityTest]
-		public IEnumerator DestroyAfterSeconds_SecondsSetTo2And3SecondsPass_GameObjectShouldBeDestroyed() {
-            float secondsToWait = 3f;
+		public IEnumerator DestroyAfterSeconds_DestroyAfterPoint2SecondsAndPoint3SecondsPass_GameObjectShouldBeDestroyed() {
+            float secondsToWait = 0.3f;
 
 			GameObject obj = new GameObject();
             DestroyAfterSeconds destroyAfterSeconds = obj.AddComponent<DestroyAfterSeconds>();
 
-            destroyAfterSeconds.Seconds = 2f;
+            destroyAfterSeconds.Seconds = 0.2f;
 
 			yield return new WaitForSeconds(secondsToWait);
 
