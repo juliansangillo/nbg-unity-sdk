@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['levelmanager_83',['LevelManager',['../de/ddf/class_naughty_biker_1_1_level_management_1_1_level_manager.html',1,'NaughtyBiker::LevelManagement']]],
-  ['levelmanagerbaseinstaller_84',['LevelManagerBaseInstaller',['../d0/d03/class_naughty_biker_1_1_level_management_1_1_installers_1_1_level_manager_base_installer.html',1,'NaughtyBiker::LevelManagement::Installers']]],
-  ['levelmanagerinstaller_85',['LevelManagerInstaller',['../d2/dee/class_naughty_biker_1_1_level_management_1_1_installers_1_1_level_manager_installer.html',1,'NaughtyBiker::LevelManagement::Installers']]],
-  ['levelmanagerscenewrappersinstaller_86',['LevelManagerSceneWrappersInstaller',['../d1/d84/class_naughty_biker_1_1_level_management_1_1_installers_1_1_level_manager_scene_wrappers_installer.html',1,'NaughtyBiker::LevelManagement::Installers']]]
+  ['levelmanager_86',['LevelManager',['../d8/d5d/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_level_manager.html',1,'NaughtyBikerGames::SDK::LevelManagement']]],
+  ['levelmanagerbaseinstaller_87',['LevelManagerBaseInstaller',['../d6/dcb/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_base_installer.html',1,'NaughtyBikerGames::SDK::LevelManagement::Installers']]],
+  ['levelmanagerinstaller_88',['LevelManagerInstaller',['../d0/d83/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_installer.html',1,'NaughtyBikerGames::SDK::LevelManagement::Installers']]],
+  ['levelmanagersceneadaptersinstaller_89',['LevelManagerSceneAdaptersInstaller',['../d7/d66/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_scene_adapters_installer.html',1,'NaughtyBikerGames::SDK::LevelManagement::Installers']]]
 ];

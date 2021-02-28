@@ -1,4 +1,4 @@
 var annotated_dup =
 [
-    [ "NaughtyBiker", "de/db5/namespace_naughty_biker.html", "de/db5/namespace_naughty_biker" ]
+    [ "NaughtyBikerGames", "d4/d2e/namespace_naughty_biker_games.html", "d4/d2e/namespace_naughty_biker_games" ]
 ];

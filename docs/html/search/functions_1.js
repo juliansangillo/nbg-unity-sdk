@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exists_103',['Exists',['../d6/d12/class_naughty_biker_1_1_info_objects_1_1_info.html#a20331575cea440046b728e128e1699bd',1,'NaughtyBiker.InfoObjects.Info.Exists()'],['../d5/daf/interface_naughty_biker_1_1_info_objects_1_1_interfaces_1_1_i_info.html#a241faa6a6a3c9cc4f9c7460859051505',1,'NaughtyBiker.InfoObjects.Interfaces.IInfo.Exists()']]]
+  ['dontdestroy_108',['DontDestroy',['../d5/da7/class_naughty_biker_games_1_1_s_d_k_1_1_destroy_1_1_dont_destroy_on_load.html#a81bc5d2babc72701bb7db36685fb95da',1,'NaughtyBikerGames::SDK::Destroy::DontDestroyOnLoad']]]
 ];

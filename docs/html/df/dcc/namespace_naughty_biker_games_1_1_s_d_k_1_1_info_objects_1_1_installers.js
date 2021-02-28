@@ -1,0 +1,5 @@
+var namespace_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_installers =
+[
+    [ "InfoObjectBaseInstaller", "d0/dac/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_installers_1_1_info_object_base_installer.html", "d0/dac/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_installers_1_1_info_object_base_installer" ],
+    [ "InfoObjectInstaller", "db/d89/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_installers_1_1_info_object_installer.html", "db/d89/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_installers_1_1_info_object_installer" ]
+];

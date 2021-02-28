@@ -1,0 +1,4 @@
+var namespace_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_interfaces =
+[
+    [ "ILevelManager", "db/d48/interface_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_interfaces_1_1_i_level_manager.html", "db/d48/interface_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_interfaces_1_1_i_level_manager" ]
+];
