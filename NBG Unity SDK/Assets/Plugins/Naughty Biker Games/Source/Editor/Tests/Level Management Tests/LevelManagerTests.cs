@@ -1,12 +1,12 @@
 ﻿using System;
-using NaughtyBiker.LevelManagement;
-using NaughtyBiker.LevelManagement.Installers;
-using NaughtyBiker.LevelManagement.Interfaces;
-using NaughtyBiker.Wrappers.Interfaces;
+using NaughtyBikerGames.SDK.LevelManagement;
+using NaughtyBikerGames.SDK.LevelManagement.Installers;
+using NaughtyBikerGames.SDK.LevelManagement.Interfaces;
+using NaughtyBikerGames.SDK.Adapters.Interfaces;
 using NSubstitute;
 using NUnit.Framework;
 
-namespace NaughtyBiker.Editor.Tests.LevelManagement {
+namespace NaughtyBikerGames.SDK.Editor.Tests.LevelManagement {
 	public class LevelManagerTests : ZenjectTests {
 		ISceneManager sceneManagerMock;
 		ISceneUtility sceneUtilityMock;

@@ -1,15 +1,15 @@
 ﻿using System.Collections;
-using NaughtyBiker.Editor.UnityTests.Stubs;
-using NaughtyBiker.InfoObjects;
-using NaughtyBiker.InfoObjects.Delegates;
-using NaughtyBiker.Signals;
-using NaughtyBiker.Signals.Installers;
+using NaughtyBikerGames.SDK.Editor.UnityTests.Stubs;
+using NaughtyBikerGames.SDK.InfoObjects.Components;
+using NaughtyBikerGames.SDK.InfoObjects.Delegates;
+using NaughtyBikerGames.SDK.Signals;
+using NaughtyBikerGames.SDK.Signals.Installers;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using Zenject;
 
-namespace NaughtyBiker.Editor.UnityTests.InfoObjects {
+namespace NaughtyBikerGames.SDK.Editor.UnityTests.InfoObjects {
 	public class InfoObjectControlTests : ZenjectMonobehaviourTests {
 		SignalBus signalBus;
 

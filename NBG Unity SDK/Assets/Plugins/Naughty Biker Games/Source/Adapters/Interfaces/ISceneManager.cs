@@ -1,14 +1,14 @@
 using UnityEngine.SceneManagement;
 
-namespace NaughtyBiker.Wrappers.Interfaces {
+namespace NaughtyBikerGames.SDK.Adapters.Interfaces {
     /**
     * An adapter for Unity's SceneManager. SceneManager is an API that allows you to load new scenes and perform other
-    * scene related operations. SceneManager is a static class and is coupled with Unity's systems. This wrapper decouples
-    * the SceneManager from the classes that use it. This way, stubs and mocks of this wrapper can be injected for
+    * scene related operations. SceneManager is a static class and is coupled with Unity's systems. This decouples
+    * the SceneManager from the classes that use it. This way, stubs and mocks of this adapter can be injected for
     * testing purposes.
     *
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     */
 	public interface ISceneManager {
         /// The number of scenes in build settings

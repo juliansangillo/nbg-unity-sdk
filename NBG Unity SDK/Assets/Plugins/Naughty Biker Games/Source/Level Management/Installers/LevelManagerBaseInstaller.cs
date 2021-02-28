@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using Zenject;
 
-namespace NaughtyBiker.LevelManagement.Installers {
+namespace NaughtyBikerGames.SDK.LevelManagement.Installers {
 	/**
     * A Zenject base installer that installs bindings for the LevelManager API dependencies.
     * 
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     * 
     * @see LevelManager
     */

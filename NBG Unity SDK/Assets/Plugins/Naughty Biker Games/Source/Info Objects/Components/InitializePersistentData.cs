@@ -1,18 +1,18 @@
 ﻿using UnityEngine;
 using Zenject;
-using NaughtyBiker.Signals;
+using NaughtyBikerGames.SDK.Signals;
 
-namespace NaughtyBiker.InfoObjects {
+namespace NaughtyBikerGames.SDK.InfoObjects.Components {
     /**
     * A monobehaviour that will fire an InitializeSignal during Unity's start phase once attached to a game object. You can use
     * this signal to initialize data, including info object data and firing other signals, across your game at the start of each scene.<br>
     *
-    * Component Menu: "Naughty Biker Games / Info Objects / Initialize Persistent Data"
+    * Component Menu: "Naughty Biker Games / SDK / Info Objects / Components / Initialize Persistent Data"
     *
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     */
-    [AddComponentMenu("Naughty Biker Games/Info Objects/Initialize Persistent Data")]
+    [AddComponentMenu("Naughty Biker Games/SDK/Info Objects/Components/Initialize Persistent Data")]
     public class InitializePersistentData : MonoBehaviour {
         private SignalBus signalBus;
 
@@ -26,7 +26,7 @@ namespace NaughtyBiker.InfoObjects {
             this.signalBus = signalBus;
         }
 
-        private void Start() {
+        public void Start() {
             signalBus.Fire(new InitializeSignal());
         }
     }

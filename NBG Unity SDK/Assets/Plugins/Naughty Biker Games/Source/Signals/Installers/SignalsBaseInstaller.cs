@@ -1,12 +1,12 @@
 using Zenject;
 
-namespace NaughtyBiker.Signals.Installers {
+namespace NaughtyBikerGames.SDK.Signals.Installers {
 	/**
     * A Zenject base installer that installs bindings for the Zenject signal bus and declares the InitializeSignal and 
     * StateChangeSignal.
     * 
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     */
 	public class SignalsBaseInstaller : Installer<SignalsBaseInstaller> {
 		/**

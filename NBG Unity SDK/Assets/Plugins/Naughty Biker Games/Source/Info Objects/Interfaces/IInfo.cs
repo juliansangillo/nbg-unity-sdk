@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
-using NaughtyBiker.InfoObjects.Delegates;
+using NaughtyBikerGames.SDK.InfoObjects.Delegates;
 
-namespace NaughtyBiker.InfoObjects.Interfaces {
+namespace NaughtyBikerGames.SDK.InfoObjects.Interfaces {
     /**
     * Stores info on another game object for the purpose of persisting this data across scenes. Uses
     * key-value pairs to store the data. Keys must be strings while values could be of any type.
     *
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     *
     * @see IInfoObject
     */

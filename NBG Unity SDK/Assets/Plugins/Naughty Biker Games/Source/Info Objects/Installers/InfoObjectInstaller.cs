@@ -1,17 +1,17 @@
 using UnityEngine;
 using Zenject;
 
-namespace NaughtyBiker.InfoObjects.Installers {
+namespace NaughtyBikerGames.SDK.InfoObjects.Installers {
 	/**
     * A Zenject monoinstaller that installs bindings for the InfoObject API dependencies. To use, attach this installer 
     * to a game object and reference it in the scene context or project context.
     *
-    * Component Menu: "Naughty Biker Games / Zenject Installers / Info Object Installer"
+    * Component Menu: "Naughty Biker Games / SDK / Info Objects / Installers / Info Object Installer"
     * 
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     */
-	[AddComponentMenu("Naughty Biker Games/Zenject Installers/Info Object Installer")]
+	[AddComponentMenu("Naughty Biker Games/SDK/Info Objects/Installers/Info Object Installer")]
     public class InfoObjectInstaller : MonoInstaller<InfoObjectInstaller> {
         /**
         * A callback from Zenject that binds InfoObject dependencies to the DI Container for future dependency injection. This is 

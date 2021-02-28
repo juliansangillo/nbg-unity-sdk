@@ -1,7 +1,7 @@
-using NaughtyBiker.InfoObjects.Interfaces;
+using NaughtyBikerGames.SDK.InfoObjects.Interfaces;
 using UnityEngine;
 
-namespace NaughtyBiker.InfoObjects.Delegates {
+namespace NaughtyBikerGames.SDK.InfoObjects.Delegates {
 	/**
     * A delegate function to call when requesting Zenject to provide us with a new info object.
     *

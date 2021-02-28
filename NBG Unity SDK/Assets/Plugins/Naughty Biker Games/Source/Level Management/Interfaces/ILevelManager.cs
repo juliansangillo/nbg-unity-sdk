@@ -1,6 +1,6 @@
 ﻿using Zenject;
 
-namespace NaughtyBiker.LevelManagement.Interfaces {
+namespace NaughtyBikerGames.SDK.LevelManagement.Interfaces {
     /**
     * Keeps track of the active scene and abstracts the process for navigating between scenes using Unity's built in SceneManagement 
     * API. It will use the list of scenes added in Unity's Build Settings as the levels to track. If you want a scene to be treated 
@@ -19,7 +19,7 @@ namespace NaughtyBiker.LevelManagement.Interfaces {
     * </ul>
     *
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     */
     public interface ILevelManager : IInitializable {
         /// The label of the active level

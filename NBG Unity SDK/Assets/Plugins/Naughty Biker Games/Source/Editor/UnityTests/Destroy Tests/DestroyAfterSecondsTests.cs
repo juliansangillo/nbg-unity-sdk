@@ -2,9 +2,9 @@
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-using NaughtyBiker.Destroy;
+using NaughtyBikerGames.SDK.Destroy;
 
-namespace NaughtyBiker.Editor.UnityTests.Destroy {
+namespace NaughtyBikerGames.SDK.Editor.UnityTests.Destroy {
 	public class DestroyAfterSecondsTests : MonobehaviourTests {
 		[UnityTest]
 		public IEnumerator DestroyAfterSeconds_DestroyAfterPoint2SecondsAndOnlyPoint1SecondPasses_GameObjectShouldNotBeDestroyed() {

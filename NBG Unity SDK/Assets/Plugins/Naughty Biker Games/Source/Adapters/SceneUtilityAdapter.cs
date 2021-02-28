@@ -1,14 +1,14 @@
-using NaughtyBiker.Wrappers.Interfaces;
+using NaughtyBikerGames.SDK.Adapters.Interfaces;
 using UnityEngine.SceneManagement;
 
-namespace NaughtyBiker.Wrappers {
+namespace NaughtyBikerGames.SDK.Adapters {
 	/**
     * Default implementation of ISceneUtility
     *
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     */
-	public class SceneUtilityWrapper : ISceneUtility {
+	public class SceneUtilityAdapter : ISceneUtility {
 		/**
 		* Default implementation of ISceneUtility.GetScenePathByBuildIndex(int buildIndex)
 		*

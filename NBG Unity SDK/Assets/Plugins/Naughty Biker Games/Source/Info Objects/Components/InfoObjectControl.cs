@@ -1,25 +1,25 @@
 ﻿using UnityEngine;
 using Zenject;
-using NaughtyBiker.Signals;
-using NaughtyBiker.InfoObjects.Interfaces;
-using NaughtyBiker.InfoObjects.Delegates;
+using NaughtyBikerGames.SDK.Signals;
+using NaughtyBikerGames.SDK.InfoObjects.Interfaces;
+using NaughtyBikerGames.SDK.InfoObjects.Delegates;
 
-namespace NaughtyBiker.InfoObjects {
+namespace NaughtyBikerGames.SDK.InfoObjects.Components {
     /**
     * A monobehaviour that is the info object control script. Its responsibility is to maintain an info object.
     * When loaded, it will search the scene for its info object. If found, it will reference that object so others can
     * use it. If not found, it will request Zenject to instantiate a default one for it to use.<br>
     *
-    * Component Menu: "Naughty Biker Games / Info Objects / Info Object Control"
+    * Component Menu: "Naughty Biker Games / SDK / Info Objects / Components / Info Object Control"
     *
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     * 
     * @see InfoObjectInstaller
     * @see InitializePersistentData
     * @see NaughtyBiker.Signals.InitializeSignal
     */
-    [AddComponentMenu("Naughty Biker Games/Info Objects/Info Object Control")]
+    [AddComponentMenu("Naughty Biker Games/SDK/Info Objects/Components/Info Object Control")]
     public class InfoObjectControl : MonoBehaviour {
         [SerializeField] private GameObject infoObjectPrefab = null;
         [SerializeField] private string objectTag = "";
@@ -27,22 +27,6 @@ namespace NaughtyBiker.InfoObjects {
         private IInfoObject infoObj;
         private CreateInfoObject createInfoObject;
         private SignalBus signalBus;
-
-        /**
-        * Construction method. Used to initialize monobehaviours
-        *
-        * @param createInfoObject Delegate function from the installer that requests Zenject to create an info object
-        * @param signalBus The Zenject signal bus. Used to fire Zenject signals
-        */
-        [Inject]
-        public void Construct(CreateInfoObject createInfoObject, SignalBus signalBus) {
-
-            this.createInfoObject = createInfoObject;
-            this.signalBus = signalBus;
-
-            infoObjectPrefab = Resources.Load<GameObject>("Info Object");
-
-        }
 
         /** 
         * A reference to the prefab of an info object. By default, this 
@@ -73,7 +57,23 @@ namespace NaughtyBiker.InfoObjects {
             }
         }
 
-        private void Start() {
+        /**
+        * Construction method. Used to initialize monobehaviours
+        *
+        * @param createInfoObject Delegate function from the installer that requests Zenject to create an info object
+        * @param signalBus The Zenject signal bus. Used to fire Zenject signals
+        */
+        [Inject]
+        public void Construct(CreateInfoObject createInfoObject, SignalBus signalBus) {
+
+            this.createInfoObject = createInfoObject;
+            this.signalBus = signalBus;
+
+            infoObjectPrefab = Resources.Load<GameObject>("Info Object");
+
+        }
+
+        public void Start() {
             GameObject obj = GameObject.FindWithTag(objectTag);
 
             if(obj != null)

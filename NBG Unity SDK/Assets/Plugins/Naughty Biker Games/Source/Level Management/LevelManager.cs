@@ -3,15 +3,15 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using Zenject;
-using NaughtyBiker.LevelManagement.Interfaces;
-using NaughtyBiker.Wrappers.Interfaces;
+using NaughtyBikerGames.SDK.LevelManagement.Interfaces;
+using NaughtyBikerGames.SDK.Adapters.Interfaces;
 
-namespace NaughtyBiker.LevelManagement {
+namespace NaughtyBikerGames.SDK.LevelManagement {
 	/**
     * Default implementation of ILevelManager.
     *
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     * 
     * @see LevelManagerInstaller
     */

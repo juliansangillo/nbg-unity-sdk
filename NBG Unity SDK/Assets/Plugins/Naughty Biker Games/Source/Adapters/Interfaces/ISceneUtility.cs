@@ -1,12 +1,12 @@
-namespace NaughtyBiker.Wrappers.Interfaces {
+namespace NaughtyBikerGames.SDK.Adapters.Interfaces {
 	/**
     * An adapter for Unity's SceneUtility. SceneUtility is a utility class for getting deatils about scenes that are not
-    * provided by SceneManager. SceneUtility is a static class and is coupled with Unity's systems. This wrapper decouples
-    * the SceneUtility from the classes that use it. This way, stubs and mocks of this wrapper can be injected for
+    * provided by SceneManager. SceneUtility is a static class and is coupled with Unity's systems. This decouples
+    * the SceneUtility from the classes that use it. This way, stubs and mocks of this adapter can be injected for
     * testing purposes.
     *
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     */
 	public interface ISceneUtility {
 		/**

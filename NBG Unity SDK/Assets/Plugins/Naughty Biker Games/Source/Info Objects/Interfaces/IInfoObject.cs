@@ -1,10 +1,10 @@
-namespace NaughtyBiker.InfoObjects.Interfaces {
+namespace NaughtyBikerGames.SDK.InfoObjects.Interfaces {
     /**
     * An info object for other game objects and is a wrapper for the IInfo objects. If this object 
     * is to persist between scenes, it must have DontDestroyOnLoad attached as well.
     *
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     *
     * @see InfoObjectControl
     */

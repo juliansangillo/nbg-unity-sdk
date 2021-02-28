@@ -1,4 +1,4 @@
-namespace NaughtyBiker.InfoObjects.Delegates {
+namespace NaughtyBikerGames.SDK.InfoObjects.Delegates {
 	/**
     * A delegate function that will fire the StateChangeSignal when a callback is recieved from the IInfo. This will
     * happen when the value of one of its keys was modified.

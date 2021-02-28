@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-using NaughtyBiker.Destroy;
+using NaughtyBikerGames.SDK.Destroy;
 
-namespace NaughtyBiker.Editor.UnityTests.Destroy {
+namespace NaughtyBikerGames.SDK.Editor.UnityTests.Destroy {
 	public class DontDestroyOnLoadTests : MonobehaviourTests {
         private const string tag = "Player";
 

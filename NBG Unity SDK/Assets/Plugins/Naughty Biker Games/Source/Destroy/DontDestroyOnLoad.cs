@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 
-namespace NaughtyBiker.Destroy {
+namespace NaughtyBikerGames.SDK.Destroy {
 	/**
     * A monobehaviour that marks the game object it is attached to as "Don't Destroy On Load." 
     * Setting an object as DontDestroyOnLoad in Unity means the object will persist between scenes
     * as opposed to being destroyed when the scene is unloaded from memory.<br>
     *
-    * Component Menu: "Naughty Biker Games / Destroy / Don't Destroy On Load"
+    * Component Menu: "Naughty Biker Games / SDK / Destroy / Don't Destroy On Load"
     *
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     */
-	[AddComponentMenu("Naughty Biker Games/Destroy/Don't Destroy On Load")]
+	[AddComponentMenu("Naughty Biker Games/SDK/Destroy/Don't Destroy On Load")]
     public class DontDestroyOnLoad : MonoBehaviour {
         [SerializeField] private bool preserveDuplicates = false;
 
@@ -22,6 +22,11 @@ namespace NaughtyBiker.Destroy {
             }
         }
 
+        public void Start() {
+            DontDestroy();
+        }
+
+        /// Marks this game object as DontDestroyOnLoad or destroys itself if another game object with the same tag exists.
         public void DontDestroy() {
 			if(!preserveDuplicates) {
                 GameObject[] objects = GameObject.FindGameObjectsWithTag(gameObject.tag);
@@ -34,9 +39,5 @@ namespace NaughtyBiker.Destroy {
 
             DontDestroyOnLoad(gameObject);
 		}
-
-        private void Start() {
-            DontDestroy();
-        }
     }
 }

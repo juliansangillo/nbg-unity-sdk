@@ -1,14 +1,14 @@
-using NaughtyBiker.Wrappers;
-using NaughtyBiker.Wrappers.Interfaces;
+using NaughtyBikerGames.SDK.Adapters;
+using NaughtyBikerGames.SDK.Adapters.Interfaces;
 
-namespace NaughtyBiker.LevelManagement.Installers {
+namespace NaughtyBikerGames.SDK.LevelManagement.Installers {
 	/**
-    * A Zenject installer that installs bindings for the LevelManager API plus the SceneManager and SceneUtility wrappers.
+    * A Zenject installer that installs bindings for the LevelManager API plus the SceneManager and SceneUtility adapters.
     * 
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     */
-    public class LevelManagerSceneWrappersInstaller : LevelManagerBaseInstaller {
+    public class LevelManagerSceneAdaptersInstaller : LevelManagerBaseInstaller {
         /**
         * A callback from Zenject that binds LevelManager and its dependencies to the DI Container for future dependency injection. This is 
         * called by Zenject during binding and should NOT be called directly!
@@ -17,12 +17,12 @@ namespace NaughtyBiker.LevelManagement.Installers {
             base.InstallBindings();
 
             Container.Bind<ISceneManager>()
-                .To<SceneManagerWrapper>()
+                .To<SceneManagerAdapter>()
                 .AsSingle()
                 .WhenInjectedInto<LevelManager>()
                 .NonLazy();
             Container.Bind<ISceneUtility>()
-                .To<SceneUtilityWrapper>()
+                .To<SceneUtilityAdapter>()
                 .AsSingle()
                 .WhenInjectedInto<LevelManager>()
                 .NonLazy();

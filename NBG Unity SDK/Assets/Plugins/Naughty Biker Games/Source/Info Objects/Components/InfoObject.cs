@@ -1,23 +1,23 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
-using NaughtyBiker.Signals;
-using NaughtyBiker.InfoObjects.Interfaces;
+using NaughtyBikerGames.SDK.Signals;
+using NaughtyBikerGames.SDK.InfoObjects.Interfaces;
 
-namespace NaughtyBiker.InfoObjects {
+namespace NaughtyBikerGames.SDK.InfoObjects.Components {
     /**
     * A monobehaviour that acts as an info object for other game objects and is a wrapper for the IInfo objects. It is worth noting that
     * Info Objects with this attached are NOT marked with DontDestroyOnLoad by default. If this object is to persist between scenes, it
     * must have DontDestroyOnLoad attached as well.<br>
     *
-    * Component Menu: "Naughty Biker Games / Info Objects / Info Object"
+    * Component Menu: "Naughty Biker Games / SDK / Info Objects / Components / Info Object"
     *
     * @author Julian Sangillo
-    * @version 2.0
+    * @version 3.0
     *
     * @see InfoObjectControl
     */
-    [AddComponentMenu("Naughty Biker Games/Info Objects/Info Object")]
+    [AddComponentMenu("Naughty Biker Games/SDK/Info Objects/Components/Info Object")]
     public class InfoObject : MonoBehaviour, IInfoObject {
         private IInfo info;
         private SignalBus signalBus;

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using NaughtyBiker.InfoObjects;
+using NaughtyBikerGames.SDK.InfoObjects;
 using NUnit.Framework;
 
-namespace NaughtyBiker.Editor.Tests.InfoObjects {
+namespace NaughtyBikerGames.SDK.Editor.Tests.InfoObjects {
 	public class InfoTests {
 		[Test]
 		public void Get_ValidAndExistingKey_ReturnsCorrectStringValue() {
