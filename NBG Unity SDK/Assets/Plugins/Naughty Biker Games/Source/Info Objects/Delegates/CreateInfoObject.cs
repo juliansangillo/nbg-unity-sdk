@@ -1,5 +1,5 @@
-using NaughtyBikerGames.SDK.InfoObjects.Interfaces;
 using UnityEngine;
+using NaughtyBikerGames.SDK.InfoObjects.Interfaces;
 
 namespace NaughtyBikerGames.SDK.InfoObjects.Delegates {
 	/**

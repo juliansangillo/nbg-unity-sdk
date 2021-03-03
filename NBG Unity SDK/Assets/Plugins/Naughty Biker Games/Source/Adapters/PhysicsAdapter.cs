@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
-using NaughtyBikerGames.SDK.Adapters.Interfaces;
 using UnityEngine;
+using NaughtyBikerGames.SDK.Adapters.Interfaces;
 
 namespace NaughtyBikerGames.SDK.Adapters {
 	/**

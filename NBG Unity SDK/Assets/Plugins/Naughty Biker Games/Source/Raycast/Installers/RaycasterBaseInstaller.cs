@@ -1,6 +1,6 @@
+using Zenject;
 using NaughtyBikerGames.SDK.Adapters;
 using NaughtyBikerGames.SDK.Adapters.Interfaces;
-using Zenject;
 
 namespace NaughtyBikerGames.SDK.Raycast.Installers {
     /**

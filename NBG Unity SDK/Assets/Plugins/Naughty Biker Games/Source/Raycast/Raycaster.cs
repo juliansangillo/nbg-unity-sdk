@@ -1,8 +1,7 @@
-using System;
-using NaughtyBikerGames.SDK.Adapters.Interfaces;
-using NaughtyBikerGames.SDK.Raycast.Interfaces;
 using UnityEngine;
 using Zenject;
+using NaughtyBikerGames.SDK.Adapters.Interfaces;
+using NaughtyBikerGames.SDK.Raycast.Interfaces;
 
 namespace NaughtyBikerGames.SDK.Raycast {
 	/**

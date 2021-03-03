@@ -1,10 +1,10 @@
 ﻿using System;
+using NSubstitute;
+using NUnit.Framework;
 using NaughtyBikerGames.SDK.LevelManagement;
 using NaughtyBikerGames.SDK.LevelManagement.Installers;
 using NaughtyBikerGames.SDK.LevelManagement.Interfaces;
 using NaughtyBikerGames.SDK.Adapters.Interfaces;
-using NSubstitute;
-using NUnit.Framework;
 
 namespace NaughtyBikerGames.SDK.Editor.Tests.LevelManagement {
 	public class LevelManagerTests : ZenjectTests {

@@ -1,5 +1,5 @@
-﻿using NaughtyBikerGames.SDK.Adapters.Interfaces;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine.SceneManagement;
+using NaughtyBikerGames.SDK.Adapters.Interfaces;
 
 namespace NaughtyBikerGames.SDK.Adapters {
 	/**

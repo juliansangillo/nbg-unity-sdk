@@ -1,15 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework;
+using UnityEngine;
+using UnityEngine.TestTools;
+using Zenject;
 using NaughtyBikerGames.SDK.InfoObjects;
 using NaughtyBikerGames.SDK.InfoObjects.Components;
 using NaughtyBikerGames.SDK.InfoObjects.Installers;
 using NaughtyBikerGames.SDK.InfoObjects.Interfaces;
 using NaughtyBikerGames.SDK.Signals;
 using NaughtyBikerGames.SDK.Signals.Installers;
-using NUnit.Framework;
-using UnityEngine;
-using UnityEngine.TestTools;
-using Zenject;
 
 namespace NaughtyBikerGames.SDK.Editor.UnityTests.InfoObjects {
 	public class InfoObjectTests : ZenjectMonobehaviourTests {

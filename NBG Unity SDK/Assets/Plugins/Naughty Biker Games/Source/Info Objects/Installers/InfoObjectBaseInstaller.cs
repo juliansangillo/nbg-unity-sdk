@@ -1,8 +1,8 @@
+using UnityEngine;
+using Zenject;
 using NaughtyBikerGames.SDK.InfoObjects.Components;
 using NaughtyBikerGames.SDK.InfoObjects.Delegates;
 using NaughtyBikerGames.SDK.InfoObjects.Interfaces;
-using UnityEngine;
-using Zenject;
 
 namespace NaughtyBikerGames.SDK.InfoObjects.Installers {
 	/**

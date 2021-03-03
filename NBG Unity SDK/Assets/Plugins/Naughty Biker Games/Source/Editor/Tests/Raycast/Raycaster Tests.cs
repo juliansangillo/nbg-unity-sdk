@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using NUnit.Framework;
+using UnityEngine;
 using NaughtyBikerGames.SDK.Editor.Tests.Stubs;
 using NaughtyBikerGames.SDK.Raycast;
-using NUnit.Framework;
-using UnityEngine;
-using UnityEngine.TestTools;
 
 namespace NaughtyBikerGames.SDK.Editor.Tests.Raycast {
 	public class RaycasterTests {

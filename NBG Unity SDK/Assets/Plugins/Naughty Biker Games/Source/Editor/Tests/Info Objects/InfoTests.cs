@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using NaughtyBikerGames.SDK.InfoObjects;
 using NUnit.Framework;
+using NaughtyBikerGames.SDK.InfoObjects;
 
 namespace NaughtyBikerGames.SDK.Editor.Tests.InfoObjects {
 	public class InfoTests {
