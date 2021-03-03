@@ -4,7 +4,7 @@ namespace NaughtyBikerGames.SDK.Adapters.Interfaces {
 	/**
 	* An adapter for Unity's Input. Input is an API that gives back data about a user's input, such as their current mouse position.
 	*
-	* @author Julian Sangillo
+	* @author Julian Sangillo <https://github.com/juliansangillo>
 	* @version 3.0
 	* @since 3.0
 	*/

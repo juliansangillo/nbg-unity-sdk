@@ -7,7 +7,7 @@ namespace NaughtyBikerGames.SDK.Destroy {
     *
     * Component Menu: "Naughty Biker Games / SDK / Destroy / Destroy After Seconds"
     *
-    * @author   Julian Sangillo
+    * @author   Julian Sangillo <https://github.com/juliansangillo>
     * @version  3.0
     * @since 1.0
     */

@@ -7,7 +7,7 @@ namespace NaughtyBikerGames.SDK.InfoObjects {
     /**
     * Default implementation of IInfo
     * 
-    * @author Julian Sangillo
+    * @author Julian Sangillo <https://github.com/juliansangillo>
     * @version 3.0
     * @since 1.0
     *

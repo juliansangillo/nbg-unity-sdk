@@ -8,7 +8,7 @@ namespace NaughtyBikerGames.SDK.LevelManagement.Installers {
     *
     * Component Menu: "Naughty Biker Games / SDK / Level Management / Installers / Level Manager Installer"
     * 
-    * @author Julian Sangillo
+    * @author Julian Sangillo <https://github.com/juliansangillo>
     * @version 3.0
     * @since 1.0
     * 

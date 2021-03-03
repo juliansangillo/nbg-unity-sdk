@@ -9,7 +9,7 @@ namespace NaughtyBikerGames.SDK.InfoObjects.Components {
     *
     * Component Menu: "Naughty Biker Games / SDK / Info Objects / Components / Initialize Persistent Data"
     *
-    * @author Julian Sangillo
+    * @author Julian Sangillo <https://github.com/juliansangillo>
     * @version 3.0
     * @since 1.0
     */

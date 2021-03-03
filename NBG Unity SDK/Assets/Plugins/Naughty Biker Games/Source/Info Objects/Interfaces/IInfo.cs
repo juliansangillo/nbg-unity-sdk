@@ -6,7 +6,7 @@ namespace NaughtyBikerGames.SDK.InfoObjects.Interfaces {
     * Stores info on another game object for the purpose of persisting this data across scenes. Uses
     * key-value pairs to store the data. Keys must be strings while values could be of any type.
     *
-    * @author Julian Sangillo
+    * @author Julian Sangillo <https://github.com/juliansangillo>
     * @version 3.0
     * @since 1.0
     *

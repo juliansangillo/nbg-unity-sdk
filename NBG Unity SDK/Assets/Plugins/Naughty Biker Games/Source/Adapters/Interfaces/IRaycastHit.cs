@@ -6,7 +6,7 @@ namespace NaughtyBikerGames.SDK.Adapters.Interfaces {
 	* collider that was hit by a Raycast. For the sake of convenience, this adapter obtains the GameObject the collider was attached
 	* to, since that is more valuable data in most circumstances.
 	*
-	* @author Julian Sangillo
+	* @author Julian Sangillo <https://github.com/juliansangillo>
 	* @version 3.0
 	* @since 3.0
 	*/

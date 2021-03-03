@@ -7,7 +7,7 @@ namespace NaughtyBikerGames.SDK.Raycast.Installers {
     *
     * Component Menu: "Naughty Biker Games / SDK / Raycast / Installers / Raycaster Installer"
     * 
-    * @author Julian Sangillo
+    * @author Julian Sangillo <https://github.com/juliansangillo>
     * @version 3.0
     * @since 3.0
     * 

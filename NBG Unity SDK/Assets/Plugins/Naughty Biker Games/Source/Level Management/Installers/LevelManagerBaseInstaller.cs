@@ -5,7 +5,7 @@ namespace NaughtyBikerGames.SDK.LevelManagement.Installers {
 	/**
     * A Zenject base installer that installs bindings for the LevelManager API dependencies.
     * 
-    * @author Julian Sangillo
+    * @author Julian Sangillo <https://github.com/juliansangillo>
     * @version 3.0
     * @since 2.0
     * 

@@ -10,7 +10,7 @@ namespace NaughtyBikerGames.SDK.LevelManagement {
 	/**
     * Default implementation of ILevelManager.
     *
-    * @author Julian Sangillo
+    * @author Julian Sangillo <https://github.com/juliansangillo>
     * @version 3.0
     * @since 1.0
     * 

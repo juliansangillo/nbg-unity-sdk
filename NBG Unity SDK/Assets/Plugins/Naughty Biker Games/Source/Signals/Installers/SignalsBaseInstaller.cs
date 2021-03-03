@@ -5,7 +5,7 @@ namespace NaughtyBikerGames.SDK.Signals.Installers {
     * A Zenject base installer that installs bindings for the Zenject signal bus and declares the InitializeSignal and 
     * StateChangeSignal.
     * 
-    * @author Julian Sangillo
+    * @author Julian Sangillo <https://github.com/juliansangillo>
     * @version 3.0
     * @since 2.0
     */
