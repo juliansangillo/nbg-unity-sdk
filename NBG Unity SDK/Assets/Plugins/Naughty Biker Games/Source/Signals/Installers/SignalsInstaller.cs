@@ -10,7 +10,7 @@ namespace NaughtyBikerGames.SDK.Signals.Installers {
     *
     * Component Menu: "Naughty Biker Games / SDK / Signals / Installers / Signals Installer"
     * 
-    * @author Julian Sangillo <https://github.com/juliansangillo>
+    * @author Julian Sangillo \<https://github.com/juliansangillo\>
     * @version 3.0
     * @since 1.0
     */

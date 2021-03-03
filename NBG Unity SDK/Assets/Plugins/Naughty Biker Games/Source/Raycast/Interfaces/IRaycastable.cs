@@ -4,7 +4,7 @@ namespace NaughtyBikerGames.SDK.Raycast.Interfaces {
 	/**
 	* Casts rays for different targets and handles the results.
 	*
-	* @author Julian Sangillo <https://github.com/juliansangillo>
+	* @author Julian Sangillo \<https://github.com/juliansangillo\>
 	* @version 3.0
 	* @since 3.0
 	*/

@@ -7,7 +7,7 @@ namespace NaughtyBikerGames.SDK.Adapters {
 	/**
     * Default implementation of IPhysics
 	*
-	* @author Julian Sangillo <https://github.com/juliansangillo>
+	* @author Julian Sangillo \<https://github.com/juliansangillo\>
 	* @version 3.0
 	* @since 3.0
     */

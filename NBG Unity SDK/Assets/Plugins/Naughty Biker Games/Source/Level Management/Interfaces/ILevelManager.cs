@@ -18,7 +18,7 @@ namespace NaughtyBikerGames.SDK.LevelManagement.Interfaces {
     *   <li>All underscores are replaced with spaces</li>
     * </ul>
     *
-    * @author Julian Sangillo <https://github.com/juliansangillo>
+    * @author Julian Sangillo \<https://github.com/juliansangillo\>
     * @version 3.0
     * @since 1.0
     */

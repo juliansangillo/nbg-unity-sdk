@@ -12,7 +12,7 @@ namespace NaughtyBikerGames.SDK.InfoObjects.Components {
     *
     * Component Menu: "Naughty Biker Games / SDK / Info Objects / Components / Info Object Control"
     *
-    * @author Julian Sangillo <https://github.com/juliansangillo>
+    * @author Julian Sangillo \<https://github.com/juliansangillo\>
     * @version 3.0
     * @since 1.0
     * 

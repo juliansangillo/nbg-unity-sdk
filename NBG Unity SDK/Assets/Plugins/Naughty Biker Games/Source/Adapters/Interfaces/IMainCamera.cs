@@ -5,7 +5,7 @@ namespace NaughtyBikerGames.SDK.Adapters.Interfaces {
 	* An adapter for Unity's Camera.main. Camera is an API that gives back data about the cameras in the scenes and 
 	* Camera.main specifically targets the main camera.
 	*
-	* @author Julian Sangillo <https://github.com/juliansangillo>
+	* @author Julian Sangillo \<https://github.com/juliansangillo\>
 	* @version 3.0
 	* @since 3.0
 	*/

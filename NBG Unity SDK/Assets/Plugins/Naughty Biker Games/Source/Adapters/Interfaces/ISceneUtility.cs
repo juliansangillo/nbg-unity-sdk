@@ -5,7 +5,7 @@ namespace NaughtyBikerGames.SDK.Adapters.Interfaces {
     * the SceneUtility from the classes that use it. This way, stubs and mocks of this adapter can be injected for
     * testing purposes.
     *
-    * @author Julian Sangillo <https://github.com/juliansangillo>
+    * @author Julian Sangillo \<https://github.com/juliansangillo\>
     * @version 3.0
 	* @since 2.0
     */

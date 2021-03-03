@@ -2,7 +2,7 @@
     /**
     * A Zenject signal that can be fired from the signal bus every time the state of an object with key-value pairs change.
     *
-    * @author Julian Sangillo <https://github.com/juliansangillo>
+    * @author Julian Sangillo \<https://github.com/juliansangillo\>
     * @version 3.0
     * @since 1.0
     *

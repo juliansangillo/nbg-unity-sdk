@@ -6,7 +6,7 @@ namespace NaughtyBikerGames.SDK.Adapters.Interfaces {
 	* An adapter for Unity's Physics. Physics is an API that allows users to perform physics operations with
 	* Unity's physics engine.
 	*
-	* @author Julian Sangillo <https://github.com/juliansangillo>
+	* @author Julian Sangillo \<https://github.com/juliansangillo\>
 	* @version 3.0
 	* @since 3.0
 	*/
