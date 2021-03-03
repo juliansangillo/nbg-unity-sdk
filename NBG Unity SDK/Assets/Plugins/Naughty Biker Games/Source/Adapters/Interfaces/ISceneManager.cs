@@ -9,6 +9,7 @@ namespace NaughtyBikerGames.SDK.Adapters.Interfaces {
     *
     * @author Julian Sangillo
     * @version 3.0
+    * @since 2.0
     */
 	public interface ISceneManager {
         /// The number of scenes in build settings

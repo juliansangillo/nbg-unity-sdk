@@ -10,6 +10,7 @@ namespace NaughtyBikerGames.SDK.Destroy {
     *
     * @author Julian Sangillo
     * @version 3.0
+    * @since 1.0
     */
 	[AddComponentMenu("Naughty Biker Games/SDK/Destroy/Don't Destroy On Load")]
     public class DontDestroyOnLoad : MonoBehaviour {

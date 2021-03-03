@@ -10,6 +10,7 @@ namespace NaughtyBikerGames.SDK.InfoObjects.Installers {
     * 
     * @author Julian Sangillo
     * @version 3.0
+    * @since 1.0
     */
 	[AddComponentMenu("Naughty Biker Games/SDK/Info Objects/Installers/Info Object Installer")]
     public class InfoObjectInstaller : MonoInstaller<InfoObjectInstaller> {

@@ -10,6 +10,7 @@ namespace NaughtyBikerGames.SDK.InfoObjects.Installers {
     * 
     * @author Julian Sangillo
     * @version 3.0
+    * @since 2.0
     */
     public class InfoObjectBaseInstaller : Installer<InfoObjectBaseInstaller> {
         /**

@@ -12,6 +12,7 @@ namespace NaughtyBikerGames.SDK.Signals.Installers {
     * 
     * @author Julian Sangillo
     * @version 3.0
+    * @since 1.0
     */
     [AddComponentMenu("Naughty Biker Games/SDK/Signals/Installers/Signals Installer")]
     public class SignalsInstaller : MonoInstaller<SignalsInstaller> {

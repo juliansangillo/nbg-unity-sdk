@@ -20,6 +20,7 @@ namespace NaughtyBikerGames.SDK.LevelManagement.Interfaces {
     *
     * @author Julian Sangillo
     * @version 3.0
+    * @since 1.0
     */
     public interface ILevelManager : IInitializable {
         /// The label of the active level

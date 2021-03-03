@@ -7,6 +7,7 @@ namespace NaughtyBikerGames.SDK.LevelManagement.Installers {
     * 
     * @author Julian Sangillo
     * @version 3.0
+    * @since 2.0
     * 
     * @see LevelManager
     */

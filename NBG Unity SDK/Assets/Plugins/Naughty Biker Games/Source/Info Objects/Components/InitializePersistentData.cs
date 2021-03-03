@@ -11,6 +11,7 @@ namespace NaughtyBikerGames.SDK.InfoObjects.Components {
     *
     * @author Julian Sangillo
     * @version 3.0
+    * @since 1.0
     */
     [AddComponentMenu("Naughty Biker Games/SDK/Info Objects/Components/Initialize Persistent Data")]
     public class InitializePersistentData : MonoBehaviour {
