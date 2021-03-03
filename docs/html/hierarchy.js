@@ -11,13 +11,29 @@ var hierarchy =
         [ "NaughtyBikerGames.SDK.LevelManagement.LevelManager", "d8/d5d/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_level_manager.html", null ]
       ] ]
     ] ],
+    [ "NaughtyBikerGames.SDK.Adapters.Interfaces.IInput", "dc/d97/interface_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_interfaces_1_1_i_input.html", [
+      [ "NaughtyBikerGames.SDK.Adapters.InputAdapter", "df/d55/class_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_input_adapter.html", null ]
+    ] ],
+    [ "NaughtyBikerGames.SDK.Adapters.Interfaces.IMainCamera", "d3/d26/interface_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_interfaces_1_1_i_main_camera.html", [
+      [ "NaughtyBikerGames.SDK.Adapters.MainCameraAdapter", "d7/d8f/class_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_main_camera_adapter.html", null ]
+    ] ],
     [ "NaughtyBikerGames.SDK.Signals.InitializeSignal", "d7/d86/class_naughty_biker_games_1_1_s_d_k_1_1_signals_1_1_initialize_signal.html", null ],
     [ "Installer", null, [
       [ "NaughtyBikerGames.SDK.InfoObjects.Installers.InfoObjectBaseInstaller", "d0/dac/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_installers_1_1_info_object_base_installer.html", null ],
       [ "NaughtyBikerGames.SDK.LevelManagement.Installers.LevelManagerBaseInstaller", "d6/dcb/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_base_installer.html", [
         [ "NaughtyBikerGames.SDK.LevelManagement.Installers.LevelManagerSceneAdaptersInstaller", "d7/d66/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_scene_adapters_installer.html", null ]
       ] ],
+      [ "NaughtyBikerGames.SDK.Raycast.Installers.RaycasterBaseInstaller", "db/d3c/class_naughty_biker_games_1_1_s_d_k_1_1_raycast_1_1_installers_1_1_raycaster_base_installer.html", null ],
       [ "NaughtyBikerGames.SDK.Signals.Installers.SignalsBaseInstaller", "df/d52/class_naughty_biker_games_1_1_s_d_k_1_1_signals_1_1_installers_1_1_signals_base_installer.html", null ]
+    ] ],
+    [ "NaughtyBikerGames.SDK.Adapters.Interfaces.IPhysics", "dc/dae/interface_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_interfaces_1_1_i_physics.html", [
+      [ "NaughtyBikerGames.SDK.Adapters.PhysicsAdapter", "db/ddb/class_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_physics_adapter.html", null ]
+    ] ],
+    [ "NaughtyBikerGames.SDK.Raycast.Interfaces.IRaycastable", "d1/d64/interface_naughty_biker_games_1_1_s_d_k_1_1_raycast_1_1_interfaces_1_1_i_raycastable.html", [
+      [ "NaughtyBikerGames.SDK.Raycast.Raycaster", "d0/d99/class_naughty_biker_games_1_1_s_d_k_1_1_raycast_1_1_raycaster.html", null ]
+    ] ],
+    [ "NaughtyBikerGames.SDK.Adapters.Interfaces.IRaycastHit", "dd/dd0/interface_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_interfaces_1_1_i_raycast_hit.html", [
+      [ "NaughtyBikerGames.SDK.Adapters.RaycastHitAdapter", "db/dd6/class_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_raycast_hit_adapter.html", null ]
     ] ],
     [ "NaughtyBikerGames.SDK.Adapters.Interfaces.ISceneManager", "d4/d8d/interface_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_interfaces_1_1_i_scene_manager.html", [
       [ "NaughtyBikerGames.SDK.Adapters.SceneManagerAdapter", "d6/dc4/class_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_scene_manager_adapter.html", null ]
@@ -35,6 +51,7 @@ var hierarchy =
     [ "MonoInstaller", null, [
       [ "NaughtyBikerGames.SDK.InfoObjects.Installers.InfoObjectInstaller", "db/d89/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_installers_1_1_info_object_installer.html", null ],
       [ "NaughtyBikerGames.SDK.LevelManagement.Installers.LevelManagerInstaller", "d0/d83/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_installer.html", null ],
+      [ "NaughtyBikerGames.SDK.Raycast.Installers.RaycasterInstaller", "d2/d8b/class_naughty_biker_games_1_1_s_d_k_1_1_raycast_1_1_installers_1_1_raycaster_installer.html", null ],
       [ "NaughtyBikerGames.SDK.Signals.Installers.SignalsInstaller", "de/d19/class_naughty_biker_games_1_1_s_d_k_1_1_signals_1_1_installers_1_1_signals_installer.html", null ]
     ] ],
     [ "NaughtyBikerGames.SDK.Signals.StateChangeSignal", "d6/dec/class_naughty_biker_games_1_1_s_d_k_1_1_signals_1_1_state_change_signal.html", null ]

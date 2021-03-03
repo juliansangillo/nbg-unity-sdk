@@ -12,20 +12,20 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="d2/dc6/interface_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_interfaces_1_1_i_scene_utility.html" target="_top" xlink:title=" ">
+<g id="a_node1"><a xlink:href="d3/d26/interface_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_interfaces_1_1_i_main_camera.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 190,-30.5 190,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">NaughtyBikerGames.SDK.Adapters.</text>
-<text text-anchor="middle" x="95" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Interfaces.ISceneUtility</text>
+<text text-anchor="middle" x="95" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Interfaces.IMainCamera</text>
 </a>
 </g>
 </g>
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="d0/de4/class_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_scene_utility_adapter.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="d7/d8f/class_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_main_camera_adapter.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="226,-0.5 226,-30.5 416,-30.5 416,-0.5 226,-0.5"/>
 <text text-anchor="start" x="234" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">NaughtyBikerGames.SDK.Adapters.</text>
-<text text-anchor="middle" x="321" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">SceneUtilityAdapter</text>
+<text text-anchor="middle" x="321" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">MainCameraAdapter</text>
 </a>
 </g>
 </g>
