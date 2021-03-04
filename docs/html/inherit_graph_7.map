@@ -1,8 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,137,80,164"/>
-<area shape="rect" id="node2" href="$d0/dac/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_installers_1_1_info_object_base_installer.html" title=" " alt="" coords="143,5,381,61"/>
-<area shape="rect" id="node3" href="$d6/dcb/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_base_installer.html" title=" " alt="" coords="128,85,396,141"/>
-<area shape="rect" id="node5" href="$db/d3c/class_naughty_biker_games_1_1_s_d_k_1_1_raycast_1_1_installers_1_1_raycaster_base_installer.html" title=" " alt="" coords="139,166,385,207"/>
-<area shape="rect" id="node6" href="$df/d52/class_naughty_biker_games_1_1_s_d_k_1_1_signals_1_1_installers_1_1_signals_base_installer.html" title=" " alt="" coords="141,231,383,273"/>
-<area shape="rect" id="node4" href="$d7/d66/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_scene_adapters_installer.html" title=" " alt="" coords="444,85,712,141"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,167,80,193"/>
+<area shape="rect" id="node2" href="$d0/dac/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_installers_1_1_info_object_base_installer.html" title=" " alt="" coords="148,5,387,61"/>
+<area shape="rect" id="node3" href="$d7/dc1/class_naughty_biker_games_1_1_s_d_k_1_1_interpolation_1_1_installers_1_1_lerper_base_installer.html" title=" " alt="" coords="128,86,407,127"/>
+<area shape="rect" id="node4" href="$d6/dcb/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_base_installer.html" title=" " alt="" coords="133,152,401,208"/>
+<area shape="rect" id="node6" href="$db/d3c/class_naughty_biker_games_1_1_s_d_k_1_1_raycast_1_1_installers_1_1_raycaster_base_installer.html" title=" " alt="" coords="144,233,391,274"/>
+<area shape="rect" id="node7" href="$df/d52/class_naughty_biker_games_1_1_s_d_k_1_1_signals_1_1_installers_1_1_signals_base_installer.html" title=" " alt="" coords="146,298,389,339"/>
+<area shape="rect" id="node5" href="$d7/d66/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_scene_adapters_installer.html" title=" " alt="" coords="455,152,723,208"/>
 </map>

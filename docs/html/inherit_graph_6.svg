@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 231)">
 <title>Graphical Class Hierarchy</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-231 437,-231 437,4 -4,4"/>
-<!-- Node37 -->
+<!-- Node41 -->
 <g id="node1" class="node">
-<title>Node37</title>
+<title>Node41</title>
 <g id="a_node1"><a xlink:href="d9/dda/interface_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_interfaces_1_1_i_info_object.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="0,-196.5 0,-226.5 162,-226.5 162,-196.5 0,-196.5"/>
 <text text-anchor="start" x="8" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">NaughtyBikerGames.SDK.Info</text>
@@ -19,9 +19,9 @@
 </a>
 </g>
 </g>
-<!-- Node10 -->
+<!-- Node11 -->
 <g id="node2" class="node">
-<title>Node10</title>
+<title>Node11</title>
 <g id="a_node2"><a xlink:href="de/d5b/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_components_1_1_info_object.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="230,-196.5 230,-226.5 401,-226.5 401,-196.5 230,-196.5"/>
 <text text-anchor="start" x="238" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">NaughtyBikerGames.SDK.Info</text>
@@ -29,24 +29,24 @@
 </a>
 </g>
 </g>
-<!-- Node37&#45;&gt;Node10 -->
+<!-- Node41&#45;&gt;Node11 -->
 <g id="edge1" class="edge">
-<title>Node37&#45;&gt;Node10</title>
+<title>Node41&#45;&gt;Node11</title>
 <path fill="none" stroke="midnightblue" d="M172.16,-211.5C191.18,-211.5 211.18,-211.5 229.98,-211.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="172.01,-208 162.01,-211.5 172.01,-215 172.01,-208"/>
 </g>
-<!-- Node7 -->
+<!-- Node8 -->
 <g id="node3" class="node">
-<title>Node7</title>
+<title>Node8</title>
 <g id="a_node3"><a xlink:title=" ">
 <polygon fill="white" stroke="#bfbfbf" points="34.5,-104 34.5,-123 127.5,-123 127.5,-104 34.5,-104"/>
 <text text-anchor="middle" x="81" y="-111" font-family="Helvetica,sans-Serif" font-size="10.00">MonoBehaviour</text>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node10 -->
+<!-- Node8&#45;&gt;Node11 -->
 <g id="edge4" class="edge">
-<title>Node7&#45;&gt;Node10</title>
+<title>Node8&#45;&gt;Node11</title>
 <path fill="none" stroke="midnightblue" d="M101.67,-129.26C123.81,-146.19 161.46,-172.67 198,-187.5 208.05,-191.58 218.87,-194.99 229.73,-197.84"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="103.76,-126.45 93.72,-123.07 99.46,-131.97 103.76,-126.45"/>
 </g>
@@ -60,15 +60,15 @@
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node0 -->
+<!-- Node8&#45;&gt;Node0 -->
 <g id="edge2" class="edge">
-<title>Node7&#45;&gt;Node0</title>
+<title>Node8&#45;&gt;Node0</title>
 <path fill="none" stroke="midnightblue" d="M135.74,-125.19C155.33,-129.42 177.66,-134.21 198,-138.5 211.94,-141.44 226.83,-144.54 241.15,-147.49"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="136.29,-121.73 125.77,-123.03 134.81,-128.57 136.29,-121.73"/>
 </g>
-<!-- Node9 -->
+<!-- Node10 -->
 <g id="node5" class="node">
-<title>Node9</title>
+<title>Node10</title>
 <g id="a_node5"><a xlink:href="d5/da7/class_naughty_biker_games_1_1_s_d_k_1_1_destroy_1_1_dont_destroy_on_load.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="224,-98.5 224,-128.5 407,-128.5 407,-98.5 224,-98.5"/>
 <text text-anchor="start" x="232" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">NaughtyBikerGames.SDK.Destroy.</text>
@@ -76,15 +76,15 @@
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node9 -->
+<!-- Node8&#45;&gt;Node10 -->
 <g id="edge3" class="edge">
-<title>Node7&#45;&gt;Node9</title>
+<title>Node8&#45;&gt;Node10</title>
 <path fill="none" stroke="midnightblue" d="M137.95,-113.5C163.66,-113.5 194.8,-113.5 223.73,-113.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="137.66,-110 127.66,-113.5 137.66,-117 137.66,-110"/>
 </g>
-<!-- Node11 -->
+<!-- Node12 -->
 <g id="node6" class="node">
-<title>Node11</title>
+<title>Node12</title>
 <g id="a_node6"><a xlink:href="dc/d50/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_components_1_1_info_object_control.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="212.5,-49.5 212.5,-79.5 418.5,-79.5 418.5,-49.5 212.5,-49.5"/>
 <text text-anchor="start" x="220.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">NaughtyBikerGames.SDK.Info</text>
@@ -92,15 +92,15 @@
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node11 -->
+<!-- Node8&#45;&gt;Node12 -->
 <g id="edge5" class="edge">
-<title>Node7&#45;&gt;Node11</title>
+<title>Node8&#45;&gt;Node12</title>
 <path fill="none" stroke="midnightblue" d="M137.07,-101.89C168.75,-95.22 208.9,-86.76 242.99,-79.57"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="136.17,-98.51 127.1,-103.99 137.61,-105.36 136.17,-98.51"/>
 </g>
-<!-- Node12 -->
+<!-- Node13 -->
 <g id="node7" class="node">
-<title>Node12</title>
+<title>Node13</title>
 <g id="a_node7"><a xlink:href="d7/d1c/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_components_1_1_initialize_persistent_data.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="198,-0.5 198,-30.5 433,-30.5 433,-0.5 198,-0.5"/>
 <text text-anchor="start" x="206" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">NaughtyBikerGames.SDK.Info</text>
@@ -108,9 +108,9 @@
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node12 -->
+<!-- Node8&#45;&gt;Node13 -->
 <g id="edge6" class="edge">
-<title>Node7&#45;&gt;Node12</title>
+<title>Node8&#45;&gt;Node13</title>
 <path fill="none" stroke="midnightblue" d="M101.67,-97.74C123.81,-80.81 161.46,-54.33 198,-39.5 206.52,-36.04 215.59,-33.07 224.77,-30.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="99.46,-95.03 93.72,-103.93 103.76,-100.55 99.46,-95.03"/>
 </g>

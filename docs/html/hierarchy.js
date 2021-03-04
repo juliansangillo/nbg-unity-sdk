@@ -14,12 +14,16 @@ var hierarchy =
     [ "NaughtyBikerGames.SDK.Adapters.Interfaces.IInput", "dc/d97/interface_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_interfaces_1_1_i_input.html", [
       [ "NaughtyBikerGames.SDK.Adapters.InputAdapter", "df/d55/class_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_input_adapter.html", null ]
     ] ],
+    [ "NaughtyBikerGames.SDK.Interpolation.Interfaces.ILerpable", "da/d44/interface_naughty_biker_games_1_1_s_d_k_1_1_interpolation_1_1_interfaces_1_1_i_lerpable.html", [
+      [ "NaughtyBikerGames.SDK.Interpolation.Lerper", "de/dde/class_naughty_biker_games_1_1_s_d_k_1_1_interpolation_1_1_lerper.html", null ]
+    ] ],
     [ "NaughtyBikerGames.SDK.Adapters.Interfaces.IMainCamera", "d3/d26/interface_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_interfaces_1_1_i_main_camera.html", [
       [ "NaughtyBikerGames.SDK.Adapters.MainCameraAdapter", "d7/d8f/class_naughty_biker_games_1_1_s_d_k_1_1_adapters_1_1_main_camera_adapter.html", null ]
     ] ],
     [ "NaughtyBikerGames.SDK.Signals.InitializeSignal", "d7/d86/class_naughty_biker_games_1_1_s_d_k_1_1_signals_1_1_initialize_signal.html", null ],
     [ "Installer", null, [
       [ "NaughtyBikerGames.SDK.InfoObjects.Installers.InfoObjectBaseInstaller", "d0/dac/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_installers_1_1_info_object_base_installer.html", null ],
+      [ "NaughtyBikerGames.SDK.Interpolation.Installers.LerperBaseInstaller", "d7/dc1/class_naughty_biker_games_1_1_s_d_k_1_1_interpolation_1_1_installers_1_1_lerper_base_installer.html", null ],
       [ "NaughtyBikerGames.SDK.LevelManagement.Installers.LevelManagerBaseInstaller", "d6/dcb/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_base_installer.html", [
         [ "NaughtyBikerGames.SDK.LevelManagement.Installers.LevelManagerSceneAdaptersInstaller", "d7/d66/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_scene_adapters_installer.html", null ]
       ] ],
@@ -50,6 +54,7 @@ var hierarchy =
     ] ],
     [ "MonoInstaller", null, [
       [ "NaughtyBikerGames.SDK.InfoObjects.Installers.InfoObjectInstaller", "db/d89/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_installers_1_1_info_object_installer.html", null ],
+      [ "NaughtyBikerGames.SDK.Interpolation.Installers.LerperInstaller", "de/d63/class_naughty_biker_games_1_1_s_d_k_1_1_interpolation_1_1_installers_1_1_lerper_installer.html", null ],
       [ "NaughtyBikerGames.SDK.LevelManagement.Installers.LevelManagerInstaller", "d0/d83/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_installer.html", null ],
       [ "NaughtyBikerGames.SDK.Raycast.Installers.RaycasterInstaller", "d2/d8b/class_naughty_biker_games_1_1_s_d_k_1_1_raycast_1_1_installers_1_1_raycaster_installer.html", null ],
       [ "NaughtyBikerGames.SDK.Signals.Installers.SignalsInstaller", "de/d19/class_naughty_biker_games_1_1_s_d_k_1_1_signals_1_1_installers_1_1_signals_installer.html", null ]

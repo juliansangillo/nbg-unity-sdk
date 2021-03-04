@@ -1,7 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,123,116,150"/>
-<area shape="rect" id="node2" href="$db/d89/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_installers_1_1_info_object_installer.html" title=" " alt="" coords="169,5,427,47"/>
-<area shape="rect" id="node3" href="$d0/d83/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_installer.html" title=" " alt="" coords="164,71,432,127"/>
-<area shape="rect" id="node4" href="$d2/d8b/class_naughty_biker_games_1_1_s_d_k_1_1_raycast_1_1_installers_1_1_raycaster_installer.html" title=" " alt="" coords="175,152,421,193"/>
-<area shape="rect" id="node5" href="$de/d19/class_naughty_biker_games_1_1_s_d_k_1_1_signals_1_1_installers_1_1_signals_installer.html" title=" " alt="" coords="177,217,419,259"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,151,116,178"/>
+<area shape="rect" id="node2" href="$db/d89/class_naughty_biker_games_1_1_s_d_k_1_1_info_objects_1_1_installers_1_1_info_object_installer.html" title=" " alt="" coords="174,5,433,47"/>
+<area shape="rect" id="node3" href="$de/d63/class_naughty_biker_games_1_1_s_d_k_1_1_interpolation_1_1_installers_1_1_lerper_installer.html" title=" " alt="" coords="164,71,443,112"/>
+<area shape="rect" id="node4" href="$d0/d83/class_naughty_biker_games_1_1_s_d_k_1_1_level_management_1_1_installers_1_1_level_manager_installer.html" title=" " alt="" coords="169,137,437,193"/>
+<area shape="rect" id="node5" href="$d2/d8b/class_naughty_biker_games_1_1_s_d_k_1_1_raycast_1_1_installers_1_1_raycaster_installer.html" title=" " alt="" coords="180,217,427,259"/>
+<area shape="rect" id="node6" href="$de/d19/class_naughty_biker_games_1_1_s_d_k_1_1_signals_1_1_installers_1_1_signals_installer.html" title=" " alt="" coords="182,283,425,324"/>
 </map>
